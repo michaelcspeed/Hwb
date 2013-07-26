@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sep_height">5dp</dimen>
+    <dimen name="normal_button_height">48dp</dimen>
+    <dimen name="normal_button_width">200dp</dimen>
+
+</resources>

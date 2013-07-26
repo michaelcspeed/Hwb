@@ -1,0 +1,1315 @@
+mount("ext4", "EMMC", "/dev/block/platform/omap/omap_hsmmc.0/by-name/system", "/system");
+assert(file_getprop("/system/build.prop", "ro.build.fingerprint") == "google/takju/maguro:4.2/JOP40C/527662:user/release-keys" ||
+       file_getprop("/system/build.prop", "ro.build.fingerprint") == "google/takju/maguro:4.2.1/JOP40D/533553:user/release-keys");
+assert(getprop("ro.product.device") == "maguro" ||
+       getprop("ro.build.product") == "maguro");
+ui_print("Verifying current system...");
+show_progress(0.100000, 0);
+assert(apply_patch_check("/system/app/ApplicationsProvider.apk", "2dfa8899397687e6a83dabb9b35f8bd97468e612", "8309e92d8bc7dd2cbe2fd5e51c31e1277d2d246e"));
+set_progress(0.000088);
+assert(apply_patch_check("/system/app/ApplicationsProvider.odex", "314d4551812dc5aeaee6dee46327a7a14b893b08", "7f56cf6cb5436891bbbec1a9110ad07cc71bac20"));
+set_progress(0.000227);
+assert(apply_patch_check("/system/app/BackupRestoreConfirmation.apk", "9b10f9b5b9b6bebdc2a483ccbd92ab92430b93be", "ad989578481ac670861ace08215dacc368af8d8e"));
+set_progress(0.000746);
+assert(apply_patch_check("/system/app/BackupRestoreConfirmation.odex", "ce5ee55bfc4ca829eb2b81b89b2b031d897c14f1", "4a8bb3bc6ab1b0a802f77a42f1938b22c1045049"));
+set_progress(0.000801);
+assert(apply_patch_check("/system/app/BasicDreams.apk", "bca09b9f980fb671ffb3a6b2a127ca7e529efc90", "134cd4d8ee7f82da1fd37c3e6c35bff9c9177af6"));
+set_progress(0.000935);
+assert(apply_patch_check("/system/app/BasicDreams.odex", "2eea417cf2df4be7470d652a0a0fe1f734aa9c14", "814151ecde2433a4ae23b8b136d081e94364bc40"));
+set_progress(0.001029);
+assert(apply_patch_check("/system/app/Bluetooth.apk", "b0a13e899e067bc20b053711dbce7812a178c3b7", "1aa9a7b29319a8775f5ec8d33f07fdad49e0c813"));
+set_progress(0.002877);
+assert(apply_patch_check("/system/app/Bluetooth.odex", "7a4ab70689123a2e3f64bdf98b9c4a2ade6b449e", "de4673632ce04c031bec85ed4e98be61665ba96c"));
+set_progress(0.006118);
+assert(apply_patch_check("/system/app/BrowserGoogle.apk", "334af3b49cc082a0492da3d918654512f050a63b", "9bf1884da742084bfe65db8288463bda64a70471"));
+set_progress(0.017909);
+assert(apply_patch_check("/system/app/BrowserGoogle.odex", "4749717b5f1476700a0e84b7a4428cec01eb70d7", "372c9be8ca8875dd4e73df04bedfff5d48b8474c"));
+set_progress(0.023134);
+assert(apply_patch_check("/system/app/Calculator.apk", "710736c06d67309654aa5f3a6c1d49c08854fa7b", "9b33e3d9924182ea840deed5401427d066da7b87"));
+set_progress(0.023997);
+assert(apply_patch_check("/system/app/Calculator.odex", "50ef1edf7c8184bfb99d23bb1520cb54ece1698f", "76d7dcbf610204eabda9894073e9e53bb6aaa4ba"));
+set_progress(0.025990);
+assert(apply_patch_check("/system/app/CalendarGoogle.odex", "ee7726c176b33f0e667286cd1e462d6b91ca5985", "514ea3e6051020a3f0249715b537217dc09e00ac"));
+set_progress(0.032613);
+assert(apply_patch_check("/system/app/CalendarProvider.apk", "56bbe3c7ea203fd6d56db703eaa4d17e2067da9f", "1406b26eaa8c33eb0b0bb1a8a85d5f78be027ae4"));
+set_progress(0.032999);
+assert(apply_patch_check("/system/app/CalendarProvider.odex", "ad534c020bf0ffa58c0981f9d12c808ce68de0a5", "b9dc0c4a0716bd270ee9cbbac6abf857ea28a4b2"));
+set_progress(0.035212);
+assert(apply_patch_check("/system/app/CertInstaller.apk", "89be7841b6836db48d92162011809e6b64375013", "50453761dc2db3e4d5402b8c7d07b332252ae86d"));
+set_progress(0.035750);
+assert(apply_patch_check("/system/app/CertInstaller.odex", "1788ae610245aa46de309ac4267de498616efade", "a10f6312917b2d02319d1c300d3fab545fe7fe4d"));
+set_progress(0.035979);
+assert(apply_patch_check("/system/app/ChromeBookmarksSyncAdapter.apk", "118cc72ff69950ce23e46060bbcefdc729e78c1a", "dafdc314bda253888779ed95d42bc223d25f748c"));
+set_progress(0.036113);
+assert(apply_patch_check("/system/app/ChromeBookmarksSyncAdapter.odex", "725d05419d92cc2660003c4f4dd38039a9e543d9", "c1e8c6b1ad3887aa5d993bf317a2f65f6af9d773"));
+set_progress(0.039085);
+assert(apply_patch_check("/system/app/ConfigUpdater.apk", "d29cc3744c2758fafc2838ea60e5ab2169101f0b", "9a6a2c46b9ee173b0fae62a79bf5cb2ca56d359b"));
+set_progress(0.039104);
+assert(apply_patch_check("/system/app/ConfigUpdater.odex", "9f22655de751e014d263f54c8e7da702d69f31ec", "96f051353c45f2b481873c70259ace45a3414d6a"));
+set_progress(0.053408);
+assert(apply_patch_check("/system/app/Contacts.apk", "bdfd1caf1a4217937df7a39d71503949ab93d101", "a85a179ed98d516baa9e292bd107c4cb32778d3d"));
+set_progress(0.064280);
+assert(apply_patch_check("/system/app/Contacts.odex", "7a070d846efdd435031b626b35d69b7e8fa5292e", "e8be8942cc689257671d40c88c33bfcb0a0310a1"));
+set_progress(0.073561);
+assert(apply_patch_check("/system/app/ContactsProvider.apk", "751801017640b2fd722ad2aece7abb7ebcb6eba4", "30d79446da7c2006d039de162883eb1d8d4ef0ce"));
+set_progress(0.074042);
+assert(apply_patch_check("/system/app/ContactsProvider.odex", "8be1b8f702545216a1bb7876d337fe19f8dc5d52", "212f96a89b00709111d72424c87dfa5c86e8ab7e"));
+set_progress(0.078284);
+assert(apply_patch_check("/system/app/DefaultContainerService.apk", "c580cbb6db42c71943456af7727314a5449c1d7a", "b0d7f5394499b5a5b11ca871b502fa4f7685dfab"));
+set_progress(0.078330);
+assert(apply_patch_check("/system/app/DefaultContainerService.odex", "81cf9a28794df2aac61a92a10444d366535750e2", "d34c363494c8e24ed87cbf1b81072c3089738f35"));
+set_progress(0.078449);
+assert(apply_patch_check("/system/app/DeskClockGoogle.odex", "ef01cd431981c2e3ddac60fdc75ff4c5e63c5dd0", "299dad2ed8c3248073ed9ffb2be5efeba3f1d8e5"));
+set_progress(0.080787);
+assert(apply_patch_check("/system/app/DownloadProvider.apk", "535eb1f6f611a6b9c2e9147d7c1089ab10813e0c", "bde19a8ac2705ffd5e8d6ea1604a934d127c8208"));
+set_progress(0.081574);
+assert(apply_patch_check("/system/app/DownloadProvider.odex", "93c1b4d45b86a0f0d856a4cc9f7f72774f000566", "8efd4ab7aca9230f1762f74047507b16c5b330b3"));
+set_progress(0.083278);
+assert(apply_patch_check("/system/app/DownloadProviderUi.apk", "fb74e7c73a10fe644f26786672611d1052cd4334", "4bbbb46374f581476ec10d73bc2d7ab901b39ef1"));
+set_progress(0.084132);
+assert(apply_patch_check("/system/app/DownloadProviderUi.odex", "95cea32e6c156fe1360da103e44605f6ac7b5118", "05f99f3345ca518a6319a020f06194939f78f90f"));
+set_progress(0.084363);
+assert(apply_patch_check("/system/app/DrmProvider.apk", "9b6faf3e64247fcb549ef3304b523639902dbf59", "7262cbbf4e6f468b5e141cfd4439696ee9716d5d"));
+set_progress(0.084487);
+assert(apply_patch_check("/system/app/DrmProvider.odex", "766fea6c159aa83dc77cea2196e369201c6e35c2", "59bd4b505796e60fa7b54807d8609be16c6b5c15"));
+set_progress(0.084561);
+assert(apply_patch_check("/system/app/EmailGoogle.odex", "360e313d6d5498bec3f5fd19668adf8e837ee5b5", "3a0e406a7825d30028f64b7b0b605219c9afaaf5"));
+set_progress(0.100400);
+assert(apply_patch_check("/system/app/Exchange2Google.odex", "1b8248700b4dd7268ad5fb978324eb30e343a787", "bb6c13e5f8017369ed1c56031ce4306041816d67"));
+set_progress(0.112707);
+assert(apply_patch_check("/system/app/FaceLock.apk", "6ce72f1965b3cb091f8f7d64bdda08bc88aacfeb", "519a2748801192e6f7f184d8bb396619d6ba6278"));
+set_progress(0.118061);
+assert(apply_patch_check("/system/app/FaceLock.odex", "cb40057339bc3f7a71a90057074f9427f459eede", "4464371f7e9278b7d4376e11190dbff2b7bf50a3"));
+set_progress(0.118484);
+assert(apply_patch_check("/system/app/FusedLocation.apk", "8d86c0c3a024325396cf3114cf5f4fe4fb28c91b", "6fb0caf6cc6fd4813dce29861445e55cdb116283"));
+set_progress(0.118504);
+assert(apply_patch_check("/system/app/FusedLocation.odex", "10ef4d02ed6af499a316a44f3b46a99094fcda73", "31b1cfc5cd4a49b4acdeef29afcbb9d2cbbcb20b"));
+set_progress(0.118569);
+assert(apply_patch_check("/system/app/GalleryGoogle.odex", "1a5be6cb7b15277ce194b99c7f5bf15a925a1b0a", "410cded42c2b22552f8b34edc60572702b90037e"));
+set_progress(0.133843);
+assert(apply_patch_check("/system/app/GenieWidget.odex", "73d0876b3156cb49110782a6629eac48b1d86804", "9752a5771acbbbb63e8afbdae8a0b4a6aaf19667"));
+set_progress(0.136802);
+assert(apply_patch_check("/system/app/Gmail2.odex", "cdb83645675150b632dd4f051cf3d5932223477f", "a02fe2025c9b98d1e1687767239cf0a081742e22"));
+set_progress(0.148840);
+assert(apply_patch_check("/system/app/GmsCore.odex", "03995b5ee3d0ee0430936d3715250dd95cf7a02b", "5156e599eabfb2468be31098993a2a0b71ce2772"));
+set_progress(0.158724);
+assert(apply_patch_check("/system/app/GoogleBackupTransport.apk", "972c8385b21b2ec20420e2c0efe718c2ebb2a81e", "77d43884610072f2776083d898b8388f3dac6218"));
+set_progress(0.158836);
+assert(apply_patch_check("/system/app/GoogleBackupTransport.odex", "9d615b86710e91c209ac4a69f4adb5f091e90883", "59d52985fb987a98f75320b77afbaf777878d291"));
+set_progress(0.160394);
+assert(apply_patch_check("/system/app/GoogleContactsSyncAdapter.apk", "dc0a02d49d295da03e10810e50c468f65250304e", "f2693fff7b38afae66dae6d6c9cc4cb0fb6c8b7c"));
+set_progress(0.160532);
+assert(apply_patch_check("/system/app/GoogleContactsSyncAdapter.odex", "3aa3bf9ab0edecaa51dc2c0c03dde04e43bca8bf", "dcfb062197b94fa12020d66266ed583235de427a"));
+set_progress(0.163170);
+assert(apply_patch_check("/system/app/GoogleEars.odex", "23c4ca60d6f9cad023189a4e3ed5af9e2d935237", "a5bd3e81dc442016ebe00396ced67f5a1a6effe0"));
+set_progress(0.166849);
+assert(apply_patch_check("/system/app/GoogleFeedback.apk", "e709de239c0a70873a7ff1b31e7b13654bad957a", "e5c005f7ad63bb42e1ad57ea5bb8bc9c3ab9e321"));
+set_progress(0.167716);
+assert(apply_patch_check("/system/app/GoogleFeedback.odex", "07ffdf1dad277e1ea38f095e44a3a03239ca2845", "2a1191e9c08fe28aed8b3012f3c3db4ed786895b"));
+set_progress(0.169339);
+assert(apply_patch_check("/system/app/GoogleLoginService.apk", "7f46b8b737eec798968e4b0a5fd62fbc2f01087f", "2260549eea5957f2ade75bec52042ff2aa66fa69"));
+set_progress(0.185529);
+assert(apply_patch_check("/system/app/GoogleLoginService.odex", "3be26c9a4af34aedde7a0aca9ad2145567d8c4fa", "006c63ac01307fded42f823b004956d05d04fb34"));
+set_progress(0.188711);
+assert(apply_patch_check("/system/app/GooglePartnerSetup.apk", "8f6cc9a9d35f7b0026f9101a8dae10d5ad1bae26", "5e49b3882953cb5a64ead23f5715270e79703517"));
+set_progress(0.188849);
+assert(apply_patch_check("/system/app/GooglePartnerSetup.odex", "3e198cc411b463a5197ab9b7c525610c67b3c111", "7faeac6cc02b74ba4192d8ccfad64638552073db"));
+set_progress(0.190448);
+assert(apply_patch_check("/system/app/GoogleServicesFramework.apk", "c482e6e0439acc5c18c58632ed6ad0f386e2d430", "f8edb39311b0641602deb605967e8d3163b6bdf4"));
+set_progress(0.195362);
+assert(apply_patch_check("/system/app/GoogleServicesFramework.odex", "411defe4973f245b76f642c0ba6e870752fe0c15", "a92bba1f1c5474a6af4cd326f43ba0bfbb266cac"));
+set_progress(0.203767);
+assert(apply_patch_check("/system/app/GoogleTTS.apk", "5ec758ac94d0b80ea1cb18e3cf1d94401ef1e726", "a59d6549ff54b958307818f18df85392e3cad639"));
+set_progress(0.232406);
+assert(apply_patch_check("/system/app/GoogleTTS.odex", "4eaa021e7ed7c6548891a3ab637bf72ea5eb1449", "706e1f41ae5d710bd28897844119ea6ec34ac150"));
+set_progress(0.242906);
+assert(apply_patch_check("/system/app/HTMLViewer.apk", "ffc97c646a2ccc9908c600fede51fc8352bee44f", "56ec7cc3c8ad85ce35c8793de6a356057d7f04f7"));
+set_progress(0.242950);
+assert(apply_patch_check("/system/app/HTMLViewer.odex", "1737cc091d458e0f3fbf8c59fb0741800dbae88c", "935781483c2853c75278f391e1d7db642a8e9c5e"));
+set_progress(0.242990);
+assert(apply_patch_check("/system/app/HoloSpiralWallpaper.apk", "a03bb42ec4761f919a3537a52a6a65dc047ad31a", "461627a5036e61c5b65e44ff3230f833aa4faaf1"));
+set_progress(0.243264);
+assert(apply_patch_check("/system/app/HoloSpiralWallpaper.odex", "d3b287fdf7bf07cd91e751e4de1acf6600d8eea3", "b509a7cef395a3bbf753deb15620c2d1088c3f94"));
+set_progress(0.243393);
+assert(apply_patch_check("/system/app/InputDevices.apk", "74442ea3542634a0795598c0c8023d794f1ff811", "856d35485dbdf0b55edb89e7dd142ca464dc7603"));
+set_progress(0.243667);
+assert(apply_patch_check("/system/app/InputDevices.odex", "8e9f4627fae2d74f1a3e8f7762ac5bd6a61fa31f", "2fcfd794f2d4fa3c6c6a29f0cd4cec0c8f29cb61"));
+set_progress(0.243675);
+assert(apply_patch_check("/system/app/KeyChain.apk", "c38fa93721cba7aa7f88a13e1458cb20e0dcb468", "699fd0b7670e3c3ccc902cf646ebc60b7b7c6210"));
+set_progress(0.243719);
+assert(apply_patch_check("/system/app/KeyChain.odex", "fb3d8ee223ffff31c295e466eef87ba44df26ff7", "97d06f4bbb7c9eb02ff185cc50001cfc5353b373"));
+set_progress(0.243889);
+assert(apply_patch_check("/system/app/LatinImeDictionaryPack.apk", "719c925f6dcd199c952db3507c77536c5aa61d9c", "7330027a7623e55a7664d39f912e29ab475656eb"));
+set_progress(0.244351);
+assert(apply_patch_check("/system/app/LatinImeDictionaryPack.odex", "c905060a37bf7146492287e35b4c4b63e2328ddb", "3af4af26a439d4a5cbeb08ed9a469f32d8758589"));
+set_progress(0.245408);
+assert(apply_patch_check("/system/app/LatinImeGoogle.apk", "c86019a2b5928b79f7fbafecddcfc2c738586413", "9037b3da967431fd138a27a87389a1170b556256"));
+set_progress(0.328718);
+assert(apply_patch_check("/system/app/LatinImeGoogle.odex", "1f3c6d02fcba629f9dbd1fb57eda6ff38796bdb7", "26664a9829e2ef2bd12a6c30fdb6c7c0d3262c1a"));
+set_progress(0.332398);
+assert(apply_patch_check("/system/app/Launcher2.apk", "01bb989b6fc2d2ba2f74d9c2a89f6afc776cbb42", "a80c20e2d3ee0361ddad1cab244e92574add4228"));
+set_progress(0.410908);
+assert(apply_patch_check("/system/app/Launcher2.odex", "69bf6a49e1d75df2616dea5cd0f861318cf6c356", "48d95d943d245134287a17f37ab73c42b0d530e0"));
+set_progress(0.414056);
+assert(apply_patch_check("/system/app/LiveWallpapers.apk", "0a6b529155ad528979038a4559cd3652cf5f4395", "29c1e104421f4e3834327db1c971d1d6c265b023"));
+set_progress(0.423743);
+assert(apply_patch_check("/system/app/LiveWallpapers.odex", "6a1f6d6cddbf86ecd2dd7cbd7fddcbd25cac421c", "32b613241eda1b20b6c6aeeea5024e427282549a"));
+set_progress(0.424210);
+assert(apply_patch_check("/system/app/LiveWallpapersPicker.apk", "881387d79086d0e0a25e4148f507ee2963da4106", "d15baab6ffd30cdc51f519a02438cc515077669c"));
+set_progress(0.424930);
+assert(apply_patch_check("/system/app/LiveWallpapersPicker.odex", "9c8aded28294ed90529026cb754c86dd9733ad83", "7e7fdb04f007b68cea6713727893535e75fae54b"));
+set_progress(0.425069);
+assert(apply_patch_check("/system/app/MediaProvider.apk", "0c013be309871c18b6dd7eeb54f97a286942c250", "ee6b6fe6f03d5181367f5bc8a6682e3386d46545"));
+set_progress(0.425194);
+assert(apply_patch_check("/system/app/MediaProvider.odex", "6c0f635c4201f4ed1edfa48128e51e30a60b9ccf", "823dbdfd7d43a864dfd64f5178b6ffebbdad9faa"));
+set_progress(0.426008);
+assert(apply_patch_check("/system/app/MediaUploader.odex", "83381ca0af3c3538c810d79dfc4a6f68dbbbef8a", "34bcf77cb181ead6cc26cfe0a18e0578ecdcc886"));
+set_progress(0.428627);
+assert(apply_patch_check("/system/app/Mms.apk", "09a5557c815dd8518fb32e14d06a60c30af903f4", "2bfd31009e2210ecc0038d73639aaad7373fd38d"));
+set_progress(0.434674);
+assert(apply_patch_check("/system/app/Mms.odex", "f4f9fac991d317df519f1de8b7f1b80e9e5b0748", "a2aab9cbacbe567d810ddb05bfa86ff6bfdbd2f1"));
+set_progress(0.439037);
+assert(apply_patch_check("/system/app/Music2.apk", "ee41be4458bb78310928b28e8a035e6df9b8f623", "4caa4d9489a8b0fea008aa58aa6b73c46cb66b11"));
+set_progress(0.460702);
+assert(apply_patch_check("/system/app/Music2.odex", "ef7841298afdce609e42291901a8340a0db12b4a", "3eaa86c9639c0840d331a02b466e4245dac1831d"));
+set_progress(0.480324);
+assert(apply_patch_check("/system/app/MusicFX.odex", "79a68c405bdde87d56fc10d6689387c4cf8cfddd", "f365c107f11abe9242af3f406e7d36f3311792cd"));
+set_progress(0.480818);
+assert(apply_patch_check("/system/app/NetworkLocation.odex", "d22bb7382630880bee53a117eae339668b840569", "cd7f610a8751531603802720c5c8016fff29862f"));
+set_progress(0.484862);
+assert(apply_patch_check("/system/app/Nfc.apk", "5737b4db59998f7d3eeae5920ed560b03eb14248", "9da81612e6bc3335c416a2d211b417c1f51e24ae"));
+set_progress(0.485569);
+assert(apply_patch_check("/system/app/Nfc.odex", "d05bd8961d2d880f1b10138a9b58c351a81d6471", "71a88ab474b106eb719873d27b1ff8e552ac5dac"));
+set_progress(0.486739);
+assert(apply_patch_check("/system/app/NoiseField.odex", "c33ee21ed288a5e689ab0e7925ff3459c5a6720b", "8e975a351cacd4e97973709fe43ce42971e9a840"));
+set_progress(0.486871);
+assert(apply_patch_check("/system/app/OneTimeInitializer.apk", "43d12efa8661a14e8f3f05c18e48e5e832541078", "c3f1f9f3b609b1343738f3df304566c6b59e57a2"));
+set_progress(0.486891);
+assert(apply_patch_check("/system/app/OneTimeInitializer.odex", "9fdc107fffa7e266808abe9822ea7266a99c4853", "a63d46090b88df94b1eb5c05d41045af84faafc0"));
+set_progress(0.486938);
+assert(apply_patch_check("/system/app/PackageInstaller.apk", "91a22845c2d83dc7f2d89ee1ec6df8a7b00e79f3", "0a7118c62e69eac4e8d4e65336dbac2e1dff33cc"));
+set_progress(0.488178);
+assert(apply_patch_check("/system/app/PackageInstaller.odex", "8da49e6c841fd2b5e78b1c760042bb954e2d9392", "904d710319a97de278b07df90d0d56a9b0a5f421"));
+set_progress(0.488869);
+assert(apply_patch_check("/system/app/PhaseBeam.odex", "6b707c27a16f024fc0e03b8aa56eb2078fcdb953", "94db895cb24969bc16601e636c072733e292df75"));
+set_progress(0.488999);
+assert(apply_patch_check("/system/app/Phone.apk", "47a648f3ab72ea810aeed9cd68c227865f1f2e89", "17689a304bc2cf3f810d9d0ae05029c306d1206c"));
+set_progress(0.498940);
+assert(apply_patch_check("/system/app/Phone.odex", "88f08191bd8c15e95ff8035f39ff024686e530c7", "25a85ef11082ab9120d73c1d22505ecee06aebf0"));
+set_progress(0.502123);
+assert(apply_patch_check("/system/app/PhotoTable.apk", "e914512fe921cb3abc4b2a12a6f9f109e4896f0a", "f7a413592669e68cd698f0ca6a6344fee5a967b6"));
+set_progress(0.504493);
+assert(apply_patch_check("/system/app/PhotoTable.odex", "c9887a160f035f0dda2c7528840daebceb6dad33", "4dc5db0aff73ff758512a88a5086f512f8e264a6"));
+set_progress(0.504903);
+assert(apply_patch_check("/system/app/Settings.apk", "d1b5210f97f3fe6217996747573abe64e0c5d028", "823cb12c3d5db019e6886d722fd6d46a118837d6"));
+set_progress(0.540925);
+assert(apply_patch_check("/system/app/Settings.odex", "ccebeeeea813af1b9ba25fbd126a122b3ebe52eb", "00ef02def30309dc4cb1481e606c6741f863e904"));
+set_progress(0.549221);
+assert(apply_patch_check("/system/app/SettingsProvider.apk", "0f004e48c53c9b69bdca4214fb1c4ef3455521f3", "3ced30a07df8664332b212a087fc0d90b1445317"));
+set_progress(0.549372);
+assert(apply_patch_check("/system/app/SettingsProvider.odex", "2445617788682549b08557580974646cc086d643", "254fb8a59796a70227e1aa925ecb874ba321f58e"));
+set_progress(0.549825);
+assert(apply_patch_check("/system/app/SetupWizard.odex", "ac3b4f601846a740119fdbfa21ebe4442faf1d64", "f1434cd291d64c5a5ade8b511c56ff731a4966a4"));
+set_progress(0.551789);
+assert(apply_patch_check("/system/app/SharedStorageBackup.apk", "98db1c3eed383b478d2ca842a463a975854e80b0", "22a5f60c3738c19e376fd9a0323fa6b7dcaa375b"));
+set_progress(0.551804);
+assert(apply_patch_check("/system/app/SharedStorageBackup.odex", "7d8fe7705dfd5c4bf9b36071f7ba3f44ff952563", "89b69b2b3e1c0c96b5ea21095d972cf4d80250c7"));
+set_progress(0.551829);
+assert(apply_patch_check("/system/app/SoundRecorder.apk", "7092e1a25e01698dd8e47838898ca8eeac17d924", "4f62712b095086d05dc3cb56906080e1c82888a4"));
+set_progress(0.552402);
+assert(apply_patch_check("/system/app/SoundRecorder.odex", "3651d75f75654049877a352ae2d0895979f4490c", "087f4795ea82edb2e99f4bdc132f6b3d7ca200eb"));
+set_progress(0.552547);
+assert(apply_patch_check("/system/app/Stk.apk", "d25908aab13337b75f226dd9cd746f9216c5e24f", "b412ce96483669ebac6c75e5f3b0661805ada753"));
+set_progress(0.552870);
+assert(apply_patch_check("/system/app/Stk.odex", "b2f5727de0b1cdf971dae3cd15836884056aadb4", "2b2b55252debc49bc233eff317c4c2e6e0e6afe2"));
+set_progress(0.553134);
+assert(apply_patch_check("/system/app/SystemUI.apk", "3e1a1fa64190817d3e28df53e70cc6e30c1c1d03", "d548320e1a9630df88335acd3cdbd5a2e61677ce"));
+set_progress(0.561312);
+assert(apply_patch_check("/system/app/SystemUI.odex", "40b3784ad86e69f57116c230ae8a29ae929e6d91", "0b4ea037abd9cfeeb44eef9065ef492cbead32ef"));
+set_progress(0.564086);
+assert(apply_patch_check("/system/app/TagGoogle.odex", "937053b2f23a23406b1e67cdb06870bb57720e70", "32285bb7165a577cb92d3c2f9fc026a678d732fb"));
+set_progress(0.565845);
+assert(apply_patch_check("/system/app/Talk.apk", "e7a7b5d060c2c52a817dd0ec648790621ff30a3c", "a681c503abf2572c07980eebd01492972a61a0f9"));
+set_progress(0.573548);
+assert(apply_patch_check("/system/app/Talk.odex", "3c4152223f1dc82e620f3cfdc72fb92c8fdb8937", "3530d9efe132ef9a7d5f488f659b6bfbfef75abc"));
+set_progress(0.580555);
+assert(apply_patch_check("/system/app/TelephonyProvider.apk", "d81705acf12a4c03d8cc7a6b1886d7f8e5e2b7b0", "3285bf646795e518d42216b85a73cabb92f4439a"));
+set_progress(0.580833);
+assert(apply_patch_check("/system/app/TelephonyProvider.odex", "9ebe0ac9371bc96a0cb3f93c430254226c930f3c", "0d3c3ad5c56253768ef469c913e177d3eedc4b25"));
+set_progress(0.581409);
+assert(apply_patch_check("/system/app/UserDictionaryProvider.apk", "e4d62a115853ce742a42f322d002c45a260e6ca0", "629fbac37b40d299bcd1126146e80e48f346b1b8"));
+set_progress(0.581429);
+assert(apply_patch_check("/system/app/UserDictionaryProvider.odex", "2b53ec17db8da35ae66a31ae84978baed0339e2a", "8e5e752e6b841b031006e9dcb79abaa954782fd8"));
+set_progress(0.581517);
+assert(apply_patch_check("/system/app/Velvet.apk", "b8ca286320e374b9ce4105f7e8cf20e01713c263", "8db3518f2c64a6199b81bd518fff30f15e5de18e"));
+set_progress(0.610086);
+assert(apply_patch_check("/system/app/Velvet.odex", "801bef69a27dfee566719426004ca6d69879d5fc", "82d50b10959da6681ca1d8e7b9711e98047cf5b4"));
+set_progress(0.631782);
+assert(apply_patch_check("/system/app/VideoEditorGoogle.odex", "185b418f41b544ec9206b6f363c06a26d6d30472", "a59e0e870dd6989c159fa00d1786e8737c90c9d3"));
+set_progress(0.634020);
+assert(apply_patch_check("/system/app/Videos.apk", "08e4b4c98600148b76fd199aeaa7229bab08de6f", "4df160288900b2a344398e4809b27b9d166625fd"));
+set_progress(0.644970);
+assert(apply_patch_check("/system/app/VisualizationWallpapers.apk", "c332d9b7db95b7f10cfb04ed6031821c36084d62", "f552577010ce0122c3a82e9edcbbb50db0684d83"));
+set_progress(0.645945);
+assert(apply_patch_check("/system/app/VisualizationWallpapers.odex", "d5b7a8c17df641ff4c1e630eeb92403b80b01b11", "24270b15a582581fb511e70cf4016fc10b1120cc"));
+set_progress(0.646163);
+assert(apply_patch_check("/system/app/VoiceSearchStub.odex", "86fec5fd08ea1603677aa4fac8a5d417a696521b", "a13033b000c5792d35d00aca674a82a877693947"));
+set_progress(0.646186);
+assert(apply_patch_check("/system/app/VpnDialogs.apk", "989fa7d3c9c3c6ca2d434c08e83b4cb4b1cfbfe2", "c4bdd3226bd1514275e2ac76ca88742f1e5c216c"));
+set_progress(0.646414);
+assert(apply_patch_check("/system/app/VpnDialogs.odex", "ea82ea961fc79b1ca4597c647fb66bee3ef7d257", "89ac7eedef545b1bcb8c7a5f49e1ebd743f45422"));
+set_progress(0.646467);
+assert(apply_patch_check("/system/app/YouTube.odex", "f9b6848075d2f42a6f0d466b0bd286e405e4b5b1", "d45ee76988ef1b1944f08006823e89b8ace3a700"));
+set_progress(0.668477);
+assert(apply_patch_check("/system/bin/debuggerd", "9e60bb1bedd5097725f9b05401b42e1fd58823c9", "94614068daa426cae09cef2899748a52ed6a50ad"));
+set_progress(0.668602);
+assert(apply_patch_check("/system/bin/hostapd", "63df79f3f52434b735bbfd109ae5682c814d150d", "ce861993a140ac41cb8e20dd7272691779a30c8b"));
+set_progress(0.670282);
+assert(apply_patch_check("/system/bin/mdnsd", "c801b466b6312d29572423c5a4ff000b14e455ed", "0305fb79907a8cd0b8a89d3eaee4c7b0ff2aeee3"));
+set_progress(0.671768);
+assert(apply_patch_check("/system/bin/wpa_supplicant", "ea405c3360dac86ee9868249ddf1a82152165452", "7107d1f2562465b810d2b6d8a9fb580674d2b50a"));
+set_progress(0.675606);
+assert(apply_patch_check("/system/build.prop", "777f25915783c16aa8c96f3f9d39a185510e8270", "57ea455685700f09b3a35eb642e9b0fbbe21c73e"));
+set_progress(0.675620);
+assert(apply_patch_check("/system/etc/NOTICE.html.gz", "3b40416c87a7549a0f40cd89a0e7d351b2adaf71", "9edcb16026d277f37165c9ba5afd35418915304a"));
+set_progress(0.676419);
+assert(apply_patch_check("/system/etc/recovery-resource.dat", "dfb87e7703ef7c35bceefeb104670ae900b11766", "646465870133a0d0183568fa85b964a010aea408"));
+set_progress(0.678107);
+assert(apply_patch_check("/system/framework/am.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.678108);
+assert(apply_patch_check("/system/framework/am.odex", "d56b7ecf398170256b04d22ea10c65c4b01235ee", "ac85c229ad23375c8c3d9d077a7a82c595217e4c"));
+set_progress(0.678369);
+assert(apply_patch_check("/system/framework/android.policy.jar", "d5c9afa44d972500bd9ef610f1ed544a3920e9e4", "70fd8d56bdaa69aa609364091935533336dcc3db"));
+set_progress(0.678371);
+assert(apply_patch_check("/system/framework/android.policy.odex", "c7f29613ca2f667a87ea0e13a421cbb513d30cad", "0fc71642c4c0f858a5adb3a65d9cb2db8ff70924"));
+set_progress(0.681994);
+assert(apply_patch_check("/system/framework/android.test.runner.jar", "148c96930df6095d71fc3dd2c1669bf02a881682", "3688bd38a5183674a5dfb0ebe984516faac7d966"));
+set_progress(0.681995);
+assert(apply_patch_check("/system/framework/android.test.runner.odex", "29897bdd269b72322c818fe2314a8bf8bb14de27", "a8dfa27c0ba678f287549309341938326d874183"));
+set_progress(0.683064);
+assert(apply_patch_check("/system/framework/apache-xml.jar", "2029e39657f08d82c48d94ca23c25cd4faa1db92", "ad24902ffa446080d83e92c54befa7dca2d9ceac"));
+set_progress(0.683167);
+assert(apply_patch_check("/system/framework/apache-xml.odex", "85a56e2888e8ce2484834568fc3eb054e17e0df1", "b681d28b3661635d8f01cbbcf24cd7ea5b484557"));
+set_progress(0.691061);
+assert(apply_patch_check("/system/framework/bmgr.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.691062);
+assert(apply_patch_check("/system/framework/bmgr.odex", "0026a9ea6914443732afadf289d133272e07174f", "246c2f48d24ab383ccfbbd04e5cb824d1b76e092"));
+set_progress(0.691147);
+assert(apply_patch_check("/system/framework/bouncycastle.jar", "6f0200adfa8469107da0b9915a7ccbb1fd8b6ecc", "1f679ce12ee5d900fd2e743828d0aa097d6a88e3"));
+set_progress(0.691149);
+assert(apply_patch_check("/system/framework/bouncycastle.odex", "d3d6c0528a7803ed27907c508a1c1d4037583fbc", "9517ec97a478f7b1ab0598c4159cf86546a979ea"));
+set_progress(0.697350);
+assert(apply_patch_check("/system/framework/bu.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.697351);
+assert(apply_patch_check("/system/framework/bu.odex", "75fc845e3a9f3ca6e2b10ca0011a96a5db73061e", "fac58a4d197acef5bc14b79a9d6c4616986972e9"));
+set_progress(0.697378);
+assert(apply_patch_check("/system/framework/com.android.future.usb.accessory.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.697380);
+assert(apply_patch_check("/system/framework/com.android.future.usb.accessory.odex", "a463e8ba4a81a441402d7f5edecf0d578b850252", "101335542d5535b4ba703885d242e95058fdbe7c"));
+set_progress(0.697414);
+assert(apply_patch_check("/system/framework/com.android.location.provider.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.697416);
+assert(apply_patch_check("/system/framework/com.android.location.provider.odex", "69e63e7f2f09862984ea541099056f3704458b5f", "d0bfe9cc9f45275d1eafc4a9a2435399bea9f76c"));
+set_progress(0.697471);
+assert(apply_patch_check("/system/framework/com.android.nfc_extras.jar", "015c992987c5a4dba6ed54b4a67cbd563441d7b8", "a4f401809116ad9bf65d0592ab59ecc78bf4725a"));
+set_progress(0.697473);
+assert(apply_patch_check("/system/framework/com.android.nfc_extras.odex", "8eff2276f47c2894ae462f73835a4e941d42b5d1", "529ef57e09b32c3f87a77937f9dd374437e2a923"));
+set_progress(0.697527);
+assert(apply_patch_check("/system/framework/com.google.android.maps.jar", "67697faa21006e9bc7705e939f0781794d3b9275", "48e75dfef6146bd805206c76e9ca87e5bdead919"));
+set_progress(0.697528);
+assert(apply_patch_check("/system/framework/com.google.android.maps.odex", "7d9d1da0d251d7f644689eead18013628117f60d", "3823cd26a63ffbdb6697e8801c171c5889fbb33d"));
+set_progress(0.699751);
+assert(apply_patch_check("/system/framework/com.google.android.media.effects.jar", "a8c5a2b4469311c003be4db42027d72487ed1dd9", "cf0e61eb17a730e1caf6cafa4f6a096eaa5c4f2c"));
+set_progress(0.699753);
+assert(apply_patch_check("/system/framework/com.google.android.media.effects.odex", "0163dad54e7f79ba1a69cbb1694e6c144cdbaf9f", "4f253dafc6aa9091f99ffb404774c81d86711d0a"));
+set_progress(0.700292);
+assert(apply_patch_check("/system/framework/com.google.widevine.software.drm.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.700294);
+assert(apply_patch_check("/system/framework/com.google.widevine.software.drm.odex", "ea3ee6e155c310103ca8626c2d581387153b31d0", "c423616286e9ed92d206c2c6b98d439d77415b32"));
+set_progress(0.700301);
+assert(apply_patch_check("/system/framework/content.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01"));
+set_progress(0.700303);
+assert(apply_patch_check("/system/framework/content.odex", "d104c560ca5e7227b4665ed91346c6d82caa1dd0", "118d6ca9bc012b1fbf2e287777320c7122aee28a"));
+set_progress(0.700387);
+assert(apply_patch_check("/system/framework/core-junit.jar", "c94f0d836b4641f269d0b16aafbef82624baf7c2", "79a65f57613fcd8f313164e1ec45eecd491e55bf"));
+set_progress(0.700388);
+assert(apply_patch_check("/system/framework/core-junit.odex", "98dc8cec8a86d2fc765c425054ae9adab455adf7", "187d49702836cb9c8ecc1089c9f60e3fedbc85ab"));
+set_progress(0.700546);
+assert(apply_patch_check("/system/framework/core.jar", "01149baaf0c0154ee522b2f9d11336fb5460062c", "43167ff1570417f86a5389497ad6a346e8230d49"));
+set_progress(0.700564);
+assert(apply_patch_check("/system/framework/core.odex", "3c321c15d8ce79683abdaa1244805cc9d063e3c2", "15bd7e3c153b02cc869eee784548b0116efd121c"));
+set_progress(0.720464);
+assert(apply_patch_check("/system/framework/ext.jar", "0d459e9ea6b3f444c7fa658283372d9483316335", "662fcf6f74834040d0866b97bf66ae963e6cd213"));
+set_progress(0.723754);
+assert(apply_patch_check("/system/framework/ext.odex", "95365c7f24f097ed55d1a0b6fd5eedae1df47757", "635a3112d517546e626863a77345f49ebd06dac1"));
+set_progress(0.732368);
+assert(apply_patch_check("/system/framework/framework-res.apk", "356a27997262f398c3262309b5af835cf760298d", "beb094fd73b698e3489abab886140909d897fe37"));
+set_progress(0.794107);
+assert(apply_patch_check("/system/framework/framework.jar", "fb3f7da850fa0117fcf2b10143cc76e8e611861e", "e37f37dc54dd9a87daabc04a69b5014fce6f53cd"));
+set_progress(0.794202);
+assert(apply_patch_check("/system/framework/framework.odex", "295eccb7a4f1c46afd87a68111c1eea05ea039df", "baf717c3680f5d8ddb427668c1f0ec11da82ac4b"));
+set_progress(0.853851);
+assert(apply_patch_check("/system/framework/ime.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.853852);
+assert(apply_patch_check("/system/framework/ime.odex", "48b91bbe9c59499c64be1d67c48b3956c4b1ac6d", "c06f3a5d824bda7739d1810cf06e75364c7d3630"));
+set_progress(0.853891);
+assert(apply_patch_check("/system/framework/input.jar", "811136f699563407c6336b962deb56a2da6f4c0f", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.853893);
+assert(apply_patch_check("/system/framework/input.odex", "fb6811153004a70a76cecaecb1a0db1f97d10830", "58d2cccb087c9b0e6821a2d969cbcee438ae9fc8"));
+set_progress(0.853932);
+assert(apply_patch_check("/system/framework/javax.obex.jar", "1243a7381618672612969ef3f441b15094a96d90", "4ba21130b559543af995edb10b36f04dbaa34cab"));
+set_progress(0.853933);
+assert(apply_patch_check("/system/framework/javax.obex.odex", "ae196e4543318c57cfdf691168ca7b03368b2c89", "b87c7c3c0354091d6a7c7f745e814cc5571d4f76"));
+set_progress(0.854267);
+assert(apply_patch_check("/system/framework/mms-common.jar", "67697faa21006e9bc7705e939f0781794d3b9275", "48e75dfef6146bd805206c76e9ca87e5bdead919"));
+set_progress(0.854269);
+assert(apply_patch_check("/system/framework/mms-common.odex", "86817b4fd538670ab149cfc12728b69b8d3bbda4", "056c0ae9dc2adcfec2868697a6cfddd51f96ebc4"));
+set_progress(0.855014);
+assert(apply_patch_check("/system/framework/monkey.jar", "96c65b113569561103d6dd368a94f89e5557a398", "47409d2b1c0510c9cfca80e63d450e9274f3b27a"));
+set_progress(0.855016);
+assert(apply_patch_check("/system/framework/monkey.odex", "efd44dcb3926e742e961cf159f91cd1975330e9a", "d14c22d8aca5375a1f68ecbf6b540d53dc7f628a"));
+set_progress(0.855690);
+assert(apply_patch_check("/system/framework/pm.jar", "4dda942fa2a68f097cd1ac6f92ec69fada502533", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.855692);
+assert(apply_patch_check("/system/framework/pm.odex", "61c11e45800d761699d11680c2ab628f5d0dca40", "7e5288a45b6003fb13ef7f01331faaa141e000bd"));
+set_progress(0.855921);
+assert(apply_patch_check("/system/framework/requestsync.jar", "4dda942fa2a68f097cd1ac6f92ec69fada502533", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.855923);
+assert(apply_patch_check("/system/framework/requestsync.odex", "852bbc12a898b18d6e020dd0d48a96b7d8c03af1", "14530ab1a3ddaa8c940690c7d60f06e82984a86c"));
+set_progress(0.855974);
+assert(apply_patch_check("/system/framework/send_bug.jar", "4dda942fa2a68f097cd1ac6f92ec69fada502533", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.855975);
+assert(apply_patch_check("/system/framework/send_bug.odex", "3fe479e29ddf5329f9973048e65ab835925ee0f8", "a25284d81723ac1631dc21d4c4ddf18422d15b2f"));
+set_progress(0.856015);
+assert(apply_patch_check("/system/framework/services.jar", "d0e5154044e5705cc54d039d2f64d28ea0a8bcf6", "26122aaddd7a6b6fb362ae60c574359d86b59026"));
+set_progress(0.856017);
+assert(apply_patch_check("/system/framework/services.odex", "26da4a91e9592825140a8227ba2181063a71c4f2", "f0dd5d43143d09aa3bebd1e802b52b572a4eb4bb"));
+set_progress(0.871336);
+assert(apply_patch_check("/system/framework/settings.jar", "4dda942fa2a68f097cd1ac6f92ec69fada502533", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.871338);
+assert(apply_patch_check("/system/framework/settings.odex", "13d964c7f858916c93f0f572ea64e8cbd5988f74", "35dd61074665c4c24f1e5a6fe7dec54b014d59d1"));
+set_progress(0.871384);
+assert(apply_patch_check("/system/framework/svc.jar", "4dda942fa2a68f097cd1ac6f92ec69fada502533", "7e48616e6f034fa96be61b268f79d0f4f3bfacbd"));
+set_progress(0.871386);
+assert(apply_patch_check("/system/framework/svc.odex", "cd0a0c67300f973d66ff13b09dabfaea14fb6c05", "cd14a0f5d6ff2856b253799e5bda579481a677a6"));
+set_progress(0.871442);
+assert(apply_patch_check("/system/framework/telephony-common.jar", "fc7e941ce2c36e3847a670114259262dcd448f74", "70fd8d56bdaa69aa609364091935533336dcc3db"));
+set_progress(0.871444);
+assert(apply_patch_check("/system/framework/telephony-common.odex", "6d2ace741f2c9f82ed97d43c6b240f2f4d0091a7", "96d82e13203573acc24c2d98210e40bf0cb7892d"));
+set_progress(0.878228);
+assert(apply_patch_check("/system/framework/uiautomator.jar", "6efbda38f373b2f2067a69f9deebe92a1bf80368", "49c87471007e5020a12294ab5a7d4490272d7696"));
+set_progress(0.878230);
+assert(apply_patch_check("/system/framework/uiautomator.odex", "4e3ddde7d5ed6904bbcca8ca7643dbb0751e439d", "7fb510fcfeb282440c61953480fa94209d34ec4d"));
+set_progress(0.878740);
+assert(apply_patch_check("/system/lib/hw/bluetooth.default.so", "013ac4d84f1217fb69816704358e66b967cdae02", "36b3f0274c9edf76b112ab074f9e3081aed33e48"));
+set_progress(0.883076);
+assert(apply_patch_check("/system/lib/libbcc.sha1.so", "9182b21968120f1e2fdaac454124976cfb25d832", "e9de37e910cca5a0f8e6ffc2542d571ca6c383a2"));
+set_progress(0.883105);
+assert(apply_patch_check("/system/lib/libbcc.so", "fe27025ebe7c3c8d884fc0a79985a11268f76cf8", "ab1c66bbc0d1391480541d4c12a60d54582368ae"));
+set_progress(0.922444);
+assert(apply_patch_check("/system/lib/libbcinfo.so", "61cbfa42cd0a230f3fff90a433cbf1f9aedfaa3b", "5b8452ff865e1777e0d716d546dc91fd6b615926"));
+set_progress(0.929089);
+assert(apply_patch_check("/system/lib/libchromium_net.so", "e47fbcdda4e7eae399b68531f4893766938cee1f", "ea66c0849ea9037ec4e42cc5afdc09a3ddf74b2a"));
+set_progress(0.938865);
+assert(apply_patch_check("/system/lib/libmdnssd.so", "29071b465aa088d347b5154003f316cfac8d76b2", "9f7dbc13a9c19eae290ca6f73def40910e3c1f08"));
+set_progress(0.938989);
+assert(apply_patch_check("/system/lib/libmllite.so", "16cf6bdde292191572f2e1d43a6e1a48f83cde0f", "ae805bf63acca562fa2c17ddfaf8740b4217dd73"));
+set_progress(0.939467);
+assert(apply_patch_check("/system/lib/libpatts_engine_jni_api.so", "38108af907c80e3815bab0db9acfdaab5fabee18", "295180f977b36d5c8729723577aab26005c9bd09"));
+set_progress(0.951801);
+assert(apply_patch_check("/system/lib/libstagefright_soft_aacdec.so", "d7a86238399df6e790d5cf907cb0c258c995cf25", "dfe03b3cda3c972fa6891a70e486a6d72fcbac62"));
+set_progress(0.953076);
+assert(apply_patch_check("/system/lib/libstagefright_soft_aacenc.so", "53a5a4bd5a462cf4eb4cb6ad391d3abd308f2c66", "2a46fde1f6a1f88c7377fdbe43c8bcdb76e71b25"));
+set_progress(0.954654);
+assert(apply_patch_check("/system/lib/libwebcore.so", "527d35b3c8e6332fffab8033158240e04ff97236", "6f5c08ac25806db3e34fc2255d1423ec0e3b60c9"));
+set_progress(0.997881);
+assert(apply_patch_check("/system/lib/libwebrtc_audio_preprocessing.so", "32b7063cde154bd790c82cc963bc13f3e8202f68", "c61d73f022f6ffe78aae2bf9a65cd9995dfd9692"));
+set_progress(1.000000);
+assert(apply_patch_space(14550205));
+
+# ---- start making changes here ----
+
+ui_print("Removing unneeded files...");
+delete("/system/recovery.img");
+show_progress(0.800000, 0);
+ui_print("Patching system files...");
+apply_patch("/system/app/ApplicationsProvider.apk", "-",
+            2dfa8899397687e6a83dabb9b35f8bd97468e612, 15388,
+            8309e92d8bc7dd2cbe2fd5e51c31e1277d2d246e, package_extract_file("patch/system/app/ApplicationsProvider.apk.p"));
+set_progress(0.000088);
+apply_patch("/system/app/ApplicationsProvider.odex", "-",
+            314d4551812dc5aeaee6dee46327a7a14b893b08, 24296,
+            7f56cf6cb5436891bbbec1a9110ad07cc71bac20, package_extract_file("patch/system/app/ApplicationsProvider.odex.p"));
+set_progress(0.000227);
+apply_patch("/system/app/BackupRestoreConfirmation.apk", "-",
+            9b10f9b5b9b6bebdc2a483ccbd92ab92430b93be, 90667,
+            ad989578481ac670861ace08215dacc368af8d8e, package_extract_file("patch/system/app/BackupRestoreConfirmation.apk.p"));
+set_progress(0.000746);
+apply_patch("/system/app/BackupRestoreConfirmation.odex", "-",
+            ce5ee55bfc4ca829eb2b81b89b2b031d897c14f1, 9472,
+            4a8bb3bc6ab1b0a802f77a42f1938b22c1045049, package_extract_file("patch/system/app/BackupRestoreConfirmation.odex.p"));
+set_progress(0.000801);
+apply_patch("/system/app/BasicDreams.apk", "-",
+            bca09b9f980fb671ffb3a6b2a127ca7e529efc90, 23574,
+            134cd4d8ee7f82da1fd37c3e6c35bff9c9177af6, package_extract_file("patch/system/app/BasicDreams.apk.p"));
+set_progress(0.000936);
+apply_patch("/system/app/BasicDreams.odex", "-",
+            2eea417cf2df4be7470d652a0a0fe1f734aa9c14, 16288,
+            814151ecde2433a4ae23b8b136d081e94364bc40, package_extract_file("patch/system/app/BasicDreams.odex.p"));
+set_progress(0.001029);
+apply_patch("/system/app/Bluetooth.apk", "-",
+            b0a13e899e067bc20b053711dbce7812a178c3b7, 322857,
+            1aa9a7b29319a8775f5ec8d33f07fdad49e0c813, package_extract_file("patch/system/app/Bluetooth.apk.p"));
+set_progress(0.002877);
+apply_patch("/system/app/Bluetooth.odex", "-",
+            7a4ab70689123a2e3f64bdf98b9c4a2ade6b449e, 565928,
+            de4673632ce04c031bec85ed4e98be61665ba96c, package_extract_file("patch/system/app/Bluetooth.odex.p"));
+set_progress(0.006118);
+apply_patch("/system/app/BrowserGoogle.apk", "-",
+            334af3b49cc082a0492da3d918654512f050a63b, 2059403,
+            9bf1884da742084bfe65db8288463bda64a70471, package_extract_file("patch/system/app/BrowserGoogle.apk.p"));
+set_progress(0.017909);
+apply_patch("/system/app/BrowserGoogle.odex", "-",
+            4749717b5f1476700a0e84b7a4428cec01eb70d7, 912520,
+            372c9be8ca8875dd4e73df04bedfff5d48b8474c, package_extract_file("patch/system/app/BrowserGoogle.odex.p"));
+set_progress(0.023134);
+apply_patch("/system/app/Calculator.apk", "-",
+            710736c06d67309654aa5f3a6c1d49c08854fa7b, 150698,
+            9b33e3d9924182ea840deed5401427d066da7b87, package_extract_file("patch/system/app/Calculator.apk.p"));
+set_progress(0.023996);
+apply_patch("/system/app/Calculator.odex", "-",
+            50ef1edf7c8184bfb99d23bb1520cb54ece1698f, 348080,
+            76d7dcbf610204eabda9894073e9e53bb6aaa4ba, package_extract_file("patch/system/app/Calculator.odex.p"));
+set_progress(0.025989);
+apply_patch("/system/app/CalendarGoogle.odex", "-",
+            ee7726c176b33f0e667286cd1e462d6b91ca5985, 1156712,
+            514ea3e6051020a3f0249715b537217dc09e00ac, package_extract_file("patch/system/app/CalendarGoogle.odex.p"));
+set_progress(0.032612);
+apply_patch("/system/app/CalendarProvider.apk", "-",
+            56bbe3c7ea203fd6d56db703eaa4d17e2067da9f, 67407,
+            1406b26eaa8c33eb0b0bb1a8a85d5f78be027ae4, package_extract_file("patch/system/app/CalendarProvider.apk.p"));
+set_progress(0.032998);
+apply_patch("/system/app/CalendarProvider.odex", "-",
+            ad534c020bf0ffa58c0981f9d12c808ce68de0a5, 386632,
+            b9dc0c4a0716bd270ee9cbbac6abf857ea28a4b2, package_extract_file("patch/system/app/CalendarProvider.odex.p"));
+set_progress(0.035212);
+apply_patch("/system/app/CertInstaller.apk", "-",
+            89be7841b6836db48d92162011809e6b64375013, 93855,
+            50453761dc2db3e4d5402b8c7d07b332252ae86d, package_extract_file("patch/system/app/CertInstaller.apk.p"));
+set_progress(0.035749);
+apply_patch("/system/app/CertInstaller.odex", "-",
+            1788ae610245aa46de309ac4267de498616efade, 39952,
+            a10f6312917b2d02319d1c300d3fab545fe7fe4d, package_extract_file("patch/system/app/CertInstaller.odex.p"));
+set_progress(0.035978);
+apply_patch("/system/app/ChromeBookmarksSyncAdapter.apk", "-",
+            118cc72ff69950ce23e46060bbcefdc729e78c1a, 23553,
+            dafdc314bda253888779ed95d42bc223d25f748c, package_extract_file("patch/system/app/ChromeBookmarksSyncAdapter.apk.p"));
+set_progress(0.036113);
+apply_patch("/system/app/ChromeBookmarksSyncAdapter.odex", "-",
+            725d05419d92cc2660003c4f4dd38039a9e543d9, 518992,
+            c1e8c6b1ad3887aa5d993bf317a2f65f6af9d773, package_extract_file("patch/system/app/ChromeBookmarksSyncAdapter.odex.p"));
+set_progress(0.039084);
+apply_patch("/system/app/ConfigUpdater.apk", "-",
+            d29cc3744c2758fafc2838ea60e5ab2169101f0b, 3263,
+            9a6a2c46b9ee173b0fae62a79bf5cb2ca56d359b, package_extract_file("patch/system/app/ConfigUpdater.apk.p"));
+set_progress(0.039103);
+apply_patch("/system/app/ConfigUpdater.odex", "-",
+            9f22655de751e014d263f54c8e7da702d69f31ec, 2498312,
+            96f051353c45f2b481873c70259ace45a3414d6a, package_extract_file("patch/system/app/ConfigUpdater.odex.p"));
+set_progress(0.053407);
+apply_patch("/system/app/Contacts.apk", "-",
+            bdfd1caf1a4217937df7a39d71503949ab93d101, 1898709,
+            a85a179ed98d516baa9e292bd107c4cb32778d3d, package_extract_file("patch/system/app/Contacts.apk.p"));
+set_progress(0.064279);
+apply_patch("/system/app/Contacts.odex", "-",
+            7a070d846efdd435031b626b35d69b7e8fa5292e, 1621048,
+            e8be8942cc689257671d40c88c33bfcb0a0310a1, package_extract_file("patch/system/app/Contacts.odex.p"));
+set_progress(0.073560);
+apply_patch("/system/app/ContactsProvider.apk", "-",
+            751801017640b2fd722ad2aece7abb7ebcb6eba4, 84001,
+            30d79446da7c2006d039de162883eb1d8d4ef0ce, package_extract_file("patch/system/app/ContactsProvider.apk.p"));
+set_progress(0.074041);
+apply_patch("/system/app/ContactsProvider.odex", "-",
+            8be1b8f702545216a1bb7876d337fe19f8dc5d52, 740848,
+            212f96a89b00709111d72424c87dfa5c86e8ab7e, package_extract_file("patch/system/app/ContactsProvider.odex.p"));
+set_progress(0.078283);
+apply_patch("/system/app/DefaultContainerService.apk", "-",
+            c580cbb6db42c71943456af7727314a5449c1d7a, 7931,
+            b0d7f5394499b5a5b11ca871b502fa4f7685dfab, package_extract_file("patch/system/app/DefaultContainerService.apk.p"));
+set_progress(0.078328);
+apply_patch("/system/app/DefaultContainerService.odex", "-",
+            81cf9a28794df2aac61a92a10444d366535750e2, 20928,
+            d34c363494c8e24ed87cbf1b81072c3089738f35, package_extract_file("patch/system/app/DefaultContainerService.odex.p"));
+set_progress(0.078448);
+apply_patch("/system/app/DeskClockGoogle.odex", "-",
+            ef01cd431981c2e3ddac60fdc75ff4c5e63c5dd0, 408280,
+            299dad2ed8c3248073ed9ffb2be5efeba3f1d8e5, package_extract_file("patch/system/app/DeskClockGoogle.odex.p"));
+set_progress(0.080786);
+apply_patch("/system/app/DownloadProvider.apk", "-",
+            535eb1f6f611a6b9c2e9147d7c1089ab10813e0c, 137461,
+            bde19a8ac2705ffd5e8d6ea1604a934d127c8208, package_extract_file("patch/system/app/DownloadProvider.apk.p"));
+set_progress(0.081573);
+apply_patch("/system/app/DownloadProvider.odex", "-",
+            93c1b4d45b86a0f0d856a4cc9f7f72774f000566, 297552,
+            8efd4ab7aca9230f1762f74047507b16c5b330b3, package_extract_file("patch/system/app/DownloadProvider.odex.p"));
+set_progress(0.083276);
+apply_patch("/system/app/DownloadProviderUi.apk", "-",
+            fb74e7c73a10fe644f26786672611d1052cd4334, 149157,
+            4bbbb46374f581476ec10d73bc2d7ab901b39ef1, package_extract_file("patch/system/app/DownloadProviderUi.apk.p"));
+set_progress(0.084130);
+apply_patch("/system/app/DownloadProviderUi.odex", "-",
+            95cea32e6c156fe1360da103e44605f6ac7b5118, 40400,
+            05f99f3345ca518a6319a020f06194939f78f90f, package_extract_file("patch/system/app/DownloadProviderUi.odex.p"));
+set_progress(0.084362);
+apply_patch("/system/app/DrmProvider.apk", "-",
+            9b6faf3e64247fcb549ef3304b523639902dbf59, 21628,
+            7262cbbf4e6f468b5e141cfd4439696ee9716d5d, package_extract_file("patch/system/app/DrmProvider.apk.p"));
+set_progress(0.084486);
+apply_patch("/system/app/DrmProvider.odex", "-",
+            766fea6c159aa83dc77cea2196e369201c6e35c2, 12848,
+            59bd4b505796e60fa7b54807d8609be16c6b5c15, package_extract_file("patch/system/app/DrmProvider.odex.p"));
+set_progress(0.084559);
+apply_patch("/system/app/EmailGoogle.odex", "-",
+            360e313d6d5498bec3f5fd19668adf8e837ee5b5, 2766392,
+            3a0e406a7825d30028f64b7b0b605219c9afaaf5, package_extract_file("patch/system/app/EmailGoogle.odex.p"));
+set_progress(0.100398);
+apply_patch("/system/app/Exchange2Google.odex", "-",
+            1b8248700b4dd7268ad5fb978324eb30e343a787, 2149432,
+            bb6c13e5f8017369ed1c56031ce4306041816d67, package_extract_file("patch/system/app/Exchange2Google.odex.p"));
+set_progress(0.112705);
+apply_patch("/system/app/FaceLock.apk", "-",
+            6ce72f1965b3cb091f8f7d64bdda08bc88aacfeb, 934991,
+            519a2748801192e6f7f184d8bb396619d6ba6278, package_extract_file("patch/system/app/FaceLock.apk.p"));
+set_progress(0.118058);
+apply_patch("/system/app/FaceLock.odex", "-",
+            cb40057339bc3f7a71a90057074f9427f459eede, 73920,
+            4464371f7e9278b7d4376e11190dbff2b7bf50a3, package_extract_file("patch/system/app/FaceLock.odex.p"));
+set_progress(0.118482);
+apply_patch("/system/app/FusedLocation.apk", "-",
+            8d86c0c3a024325396cf3114cf5f4fe4fb28c91b, 3566,
+            6fb0caf6cc6fd4813dce29861445e55cdb116283, package_extract_file("patch/system/app/FusedLocation.apk.p"));
+set_progress(0.118502);
+apply_patch("/system/app/FusedLocation.odex", "-",
+            10ef4d02ed6af499a316a44f3b46a99094fcda73, 11240,
+            31b1cfc5cd4a49b4acdeef29afcbb9d2cbbcb20b, package_extract_file("patch/system/app/FusedLocation.odex.p"));
+set_progress(0.118566);
+apply_patch("/system/app/GalleryGoogle.odex", "-",
+            1a5be6cb7b15277ce194b99c7f5bf15a925a1b0a, 2667632,
+            410cded42c2b22552f8b34edc60572702b90037e, package_extract_file("patch/system/app/GalleryGoogle.odex.p"));
+set_progress(0.133840);
+apply_patch("/system/app/GenieWidget.odex", "-",
+            73d0876b3156cb49110782a6629eac48b1d86804, 516848,
+            9752a5771acbbbb63e8afbdae8a0b4a6aaf19667, package_extract_file("patch/system/app/GenieWidget.odex.p"));
+set_progress(0.136800);
+apply_patch("/system/app/Gmail2.odex", "-",
+            cdb83645675150b632dd4f051cf3d5932223477f, 2102392,
+            a02fe2025c9b98d1e1687767239cf0a081742e22, package_extract_file("patch/system/app/Gmail2.odex.p"));
+set_progress(0.148837);
+apply_patch("/system/app/GmsCore.odex", "-",
+            03995b5ee3d0ee0430936d3715250dd95cf7a02b, 1726224,
+            5156e599eabfb2468be31098993a2a0b71ce2772, package_extract_file("patch/system/app/GmsCore.odex.p"));
+set_progress(0.158721);
+apply_patch("/system/app/GoogleBackupTransport.apk", "-",
+            972c8385b21b2ec20420e2c0efe718c2ebb2a81e, 19646,
+            77d43884610072f2776083d898b8388f3dac6218, package_extract_file("patch/system/app/GoogleBackupTransport.apk.p"));
+set_progress(0.158833);
+apply_patch("/system/app/GoogleBackupTransport.odex", "-",
+            9d615b86710e91c209ac4a69f4adb5f091e90883, 272016,
+            59d52985fb987a98f75320b77afbaf777878d291, package_extract_file("patch/system/app/GoogleBackupTransport.odex.p"));
+set_progress(0.160391);
+apply_patch("/system/app/GoogleContactsSyncAdapter.apk", "-",
+            dc0a02d49d295da03e10810e50c468f65250304e, 24139,
+            f2693fff7b38afae66dae6d6c9cc4cb0fb6c8b7c, package_extract_file("patch/system/app/GoogleContactsSyncAdapter.apk.p"));
+set_progress(0.160529);
+apply_patch("/system/app/GoogleContactsSyncAdapter.odex", "-",
+            3aa3bf9ab0edecaa51dc2c0c03dde04e43bca8bf, 460696,
+            dcfb062197b94fa12020d66266ed583235de427a, package_extract_file("patch/system/app/GoogleContactsSyncAdapter.odex.p"));
+set_progress(0.163166);
+apply_patch("/system/app/GoogleEars.odex", "-",
+            23c4ca60d6f9cad023189a4e3ed5af9e2d935237, 642584,
+            a5bd3e81dc442016ebe00396ced67f5a1a6effe0, package_extract_file("patch/system/app/GoogleEars.odex.p"));
+set_progress(0.166846);
+apply_patch("/system/app/GoogleFeedback.apk", "-",
+            e709de239c0a70873a7ff1b31e7b13654bad957a, 151483,
+            e5c005f7ad63bb42e1ad57ea5bb8bc9c3ab9e321, package_extract_file("patch/system/app/GoogleFeedback.apk.p"));
+set_progress(0.167713);
+apply_patch("/system/app/GoogleFeedback.odex", "-",
+            07ffdf1dad277e1ea38f095e44a3a03239ca2845, 283352,
+            2a1191e9c08fe28aed8b3012f3c3db4ed786895b, package_extract_file("patch/system/app/GoogleFeedback.odex.p"));
+set_progress(0.169335);
+apply_patch("/system/app/GoogleLoginService.apk", "-",
+            7f46b8b737eec798968e4b0a5fd62fbc2f01087f, 2827751,
+            2260549eea5957f2ade75bec52042ff2aa66fa69, package_extract_file("patch/system/app/GoogleLoginService.apk.p"));
+set_progress(0.185526);
+apply_patch("/system/app/GoogleLoginService.odex", "-",
+            3be26c9a4af34aedde7a0aca9ad2145567d8c4fa, 555640,
+            006c63ac01307fded42f823b004956d05d04fb34, package_extract_file("patch/system/app/GoogleLoginService.odex.p"));
+set_progress(0.188707);
+apply_patch("/system/app/GooglePartnerSetup.apk", "-",
+            8f6cc9a9d35f7b0026f9101a8dae10d5ad1bae26, 24172,
+            5e49b3882953cb5a64ead23f5715270e79703517, package_extract_file("patch/system/app/GooglePartnerSetup.apk.p"));
+set_progress(0.188846);
+apply_patch("/system/app/GooglePartnerSetup.odex", "-",
+            3e198cc411b463a5197ab9b7c525610c67b3c111, 279232,
+            7faeac6cc02b74ba4192d8ccfad64638552073db, package_extract_file("patch/system/app/GooglePartnerSetup.odex.p"));
+set_progress(0.190444);
+apply_patch("/system/app/GoogleServicesFramework.apk", "-",
+            c482e6e0439acc5c18c58632ed6ad0f386e2d430, 858254,
+            f8edb39311b0641602deb605967e8d3163b6bdf4, package_extract_file("patch/system/app/GoogleServicesFramework.apk.p"));
+set_progress(0.195358);
+apply_patch("/system/app/GoogleServicesFramework.odex", "-",
+            411defe4973f245b76f642c0ba6e870752fe0c15, 1467888,
+            a92bba1f1c5474a6af4cd326f43ba0bfbb266cac, package_extract_file("patch/system/app/GoogleServicesFramework.odex.p"));
+set_progress(0.203763);
+apply_patch("/system/app/GoogleTTS.apk", "-",
+            5ec758ac94d0b80ea1cb18e3cf1d94401ef1e726, 5001923,
+            a59d6549ff54b958307818f18df85392e3cad639, package_extract_file("patch/system/app/GoogleTTS.apk.p"));
+set_progress(0.232402);
+apply_patch("/system/app/GoogleTTS.odex", "-",
+            4eaa021e7ed7c6548891a3ab637bf72ea5eb1449, 1833840,
+            706e1f41ae5d710bd28897844119ea6ec34ac150, package_extract_file("patch/system/app/GoogleTTS.odex.p"));
+set_progress(0.242902);
+apply_patch("/system/app/HTMLViewer.apk", "-",
+            ffc97c646a2ccc9908c600fede51fc8352bee44f, 7680,
+            56ec7cc3c8ad85ce35c8793de6a356057d7f04f7, package_extract_file("patch/system/app/HTMLViewer.apk.p"));
+set_progress(0.242946);
+apply_patch("/system/app/HTMLViewer.odex", "-",
+            1737cc091d458e0f3fbf8c59fb0741800dbae88c, 6864,
+            935781483c2853c75278f391e1d7db642a8e9c5e, package_extract_file("patch/system/app/HTMLViewer.odex.p"));
+set_progress(0.242985);
+apply_patch("/system/app/HoloSpiralWallpaper.apk", "-",
+            a03bb42ec4761f919a3537a52a6a65dc047ad31a, 47915,
+            461627a5036e61c5b65e44ff3230f833aa4faaf1, package_extract_file("patch/system/app/HoloSpiralWallpaper.apk.p"));
+set_progress(0.243259);
+apply_patch("/system/app/HoloSpiralWallpaper.odex", "-",
+            d3b287fdf7bf07cd91e751e4de1acf6600d8eea3, 22624,
+            b509a7cef395a3bbf753deb15620c2d1088c3f94, package_extract_file("patch/system/app/HoloSpiralWallpaper.odex.p"));
+set_progress(0.243389);
+apply_patch("/system/app/InputDevices.apk", "-",
+            74442ea3542634a0795598c0c8023d794f1ff811, 47688,
+            856d35485dbdf0b55edb89e7dd142ca464dc7603, package_extract_file("patch/system/app/InputDevices.apk.p"));
+set_progress(0.243662);
+apply_patch("/system/app/InputDevices.odex", "-",
+            8e9f4627fae2d74f1a3e8f7762ac5bd6a61fa31f, 1424,
+            2fcfd794f2d4fa3c6c6a29f0cd4cec0c8f29cb61, package_extract_file("patch/system/app/InputDevices.odex.p"));
+set_progress(0.243670);
+apply_patch("/system/app/KeyChain.apk", "-",
+            c38fa93721cba7aa7f88a13e1458cb20e0dcb468, 7778,
+            699fd0b7670e3c3ccc902cf646ebc60b7b7c6210, package_extract_file("patch/system/app/KeyChain.apk.p"));
+set_progress(0.243715);
+apply_patch("/system/app/KeyChain.odex", "-",
+            fb3d8ee223ffff31c295e466eef87ba44df26ff7, 29600,
+            97d06f4bbb7c9eb02ff185cc50001cfc5353b373, package_extract_file("patch/system/app/KeyChain.odex.p"));
+set_progress(0.243884);
+apply_patch("/system/app/LatinImeDictionaryPack.apk", "-",
+            719c925f6dcd199c952db3507c77536c5aa61d9c, 80748,
+            7330027a7623e55a7664d39f912e29ab475656eb, package_extract_file("patch/system/app/LatinImeDictionaryPack.apk.p"));
+set_progress(0.244346);
+apply_patch("/system/app/LatinImeDictionaryPack.odex", "-",
+            c905060a37bf7146492287e35b4c4b63e2328ddb, 184592,
+            3af4af26a439d4a5cbeb08ed9a469f32d8758589, package_extract_file("patch/system/app/LatinImeDictionaryPack.odex.p"));
+set_progress(0.245403);
+apply_patch("/system/app/LatinImeGoogle.apk", "-",
+            c86019a2b5928b79f7fbafecddcfc2c738586413, 14550211,
+            9037b3da967431fd138a27a87389a1170b556256, package_extract_file("patch/system/app/LatinImeGoogle.apk.p"));
+set_progress(0.328712);
+apply_patch("/system/app/LatinImeGoogle.odex", "-",
+            1f3c6d02fcba629f9dbd1fb57eda6ff38796bdb7, 642672,
+            26664a9829e2ef2bd12a6c30fdb6c7c0d3262c1a, package_extract_file("patch/system/app/LatinImeGoogle.odex.p"));
+set_progress(0.332391);
+apply_patch("/system/app/Launcher2.apk", "-",
+            01bb989b6fc2d2ba2f74d9c2a89f6afc776cbb42, 13711967,
+            a80c20e2d3ee0361ddad1cab244e92574add4228, package_extract_file("patch/system/app/Launcher2.apk.p"));
+set_progress(0.410901);
+apply_patch("/system/app/Launcher2.odex", "-",
+            69bf6a49e1d75df2616dea5cd0f861318cf6c356, 549816,
+            48d95d943d245134287a17f37ab73c42b0d530e0, package_extract_file("patch/system/app/Launcher2.odex.p"));
+set_progress(0.414049);
+apply_patch("/system/app/LiveWallpapers.apk", "-",
+            0a6b529155ad528979038a4559cd3652cf5f4395, 1691728,
+            29c1e104421f4e3834327db1c971d1d6c265b023, package_extract_file("patch/system/app/LiveWallpapers.apk.p"));
+set_progress(0.423735);
+apply_patch("/system/app/LiveWallpapers.odex", "-",
+            6a1f6d6cddbf86ecd2dd7cbd7fddcbd25cac421c, 81592,
+            32b613241eda1b20b6c6aeeea5024e427282549a, package_extract_file("patch/system/app/LiveWallpapers.odex.p"));
+set_progress(0.424202);
+apply_patch("/system/app/LiveWallpapersPicker.apk", "-",
+            881387d79086d0e0a25e4148f507ee2963da4106, 125811,
+            d15baab6ffd30cdc51f519a02438cc515077669c, package_extract_file("patch/system/app/LiveWallpapersPicker.apk.p"));
+set_progress(0.424922);
+apply_patch("/system/app/LiveWallpapersPicker.odex", "-",
+            9c8aded28294ed90529026cb754c86dd9733ad83, 24256,
+            7e7fdb04f007b68cea6713727893535e75fae54b, package_extract_file("patch/system/app/LiveWallpapersPicker.odex.p"));
+set_progress(0.425061);
+apply_patch("/system/app/MediaProvider.apk", "-",
+            0c013be309871c18b6dd7eeb54f97a286942c250, 21886,
+            ee6b6fe6f03d5181367f5bc8a6682e3386d46545, package_extract_file("patch/system/app/MediaProvider.apk.p"));
+set_progress(0.425186);
+apply_patch("/system/app/MediaProvider.odex", "-",
+            6c0f635c4201f4ed1edfa48128e51e30a60b9ccf, 142128,
+            823dbdfd7d43a864dfd64f5178b6ffebbdad9faa, package_extract_file("patch/system/app/MediaProvider.odex.p"));
+set_progress(0.426000);
+apply_patch("/system/app/MediaUploader.odex", "-",
+            83381ca0af3c3538c810d79dfc4a6f68dbbbef8a, 457280,
+            34bcf77cb181ead6cc26cfe0a18e0578ecdcc886, package_extract_file("patch/system/app/MediaUploader.odex.p"));
+set_progress(0.428618);
+apply_patch("/system/app/Mms.apk", "-",
+            09a5557c815dd8518fb32e14d06a60c30af903f4, 1056201,
+            2bfd31009e2210ecc0038d73639aaad7373fd38d, package_extract_file("patch/system/app/Mms.apk.p"));
+set_progress(0.434666);
+apply_patch("/system/app/Mms.odex", "-",
+            f4f9fac991d317df519f1de8b7f1b80e9e5b0748, 762080,
+            a2aab9cbacbe567d810ddb05bfa86ff6bfdbd2f1, package_extract_file("patch/system/app/Mms.odex.p"));
+set_progress(0.439029);
+apply_patch("/system/app/Music2.apk", "-",
+            ee41be4458bb78310928b28e8a035e6df9b8f623, 3783715,
+            4caa4d9489a8b0fea008aa58aa6b73c46cb66b11, package_extract_file("patch/system/app/Music2.apk.p"));
+set_progress(0.460693);
+apply_patch("/system/app/Music2.odex", "-",
+            ef7841298afdce609e42291901a8340a0db12b4a, 3426984,
+            3eaa86c9639c0840d331a02b466e4245dac1831d, package_extract_file("patch/system/app/Music2.odex.p"));
+set_progress(0.480315);
+apply_patch("/system/app/MusicFX.odex", "-",
+            79a68c405bdde87d56fc10d6689387c4cf8cfddd, 86328,
+            f365c107f11abe9242af3f406e7d36f3311792cd, package_extract_file("patch/system/app/MusicFX.odex.p"));
+set_progress(0.480809);
+apply_patch("/system/app/NetworkLocation.odex", "-",
+            d22bb7382630880bee53a117eae339668b840569, 706272,
+            cd7f610a8751531603802720c5c8016fff29862f, package_extract_file("patch/system/app/NetworkLocation.odex.p"));
+set_progress(0.484853);
+apply_patch("/system/app/Nfc.apk", "-",
+            5737b4db59998f7d3eeae5920ed560b03eb14248, 123408,
+            9da81612e6bc3335c416a2d211b417c1f51e24ae, package_extract_file("patch/system/app/Nfc.apk.p"));
+set_progress(0.485559);
+apply_patch("/system/app/Nfc.odex", "-",
+            d05bd8961d2d880f1b10138a9b58c351a81d6471, 204368,
+            71a88ab474b106eb719873d27b1ff8e552ac5dac, package_extract_file("patch/system/app/Nfc.odex.p"));
+set_progress(0.486729);
+apply_patch("/system/app/NoiseField.odex", "-",
+            c33ee21ed288a5e689ab0e7925ff3459c5a6720b, 23136,
+            8e975a351cacd4e97973709fe43ce42971e9a840, package_extract_file("patch/system/app/NoiseField.odex.p"));
+set_progress(0.486862);
+apply_patch("/system/app/OneTimeInitializer.apk", "-",
+            43d12efa8661a14e8f3f05c18e48e5e832541078, 3442,
+            c3f1f9f3b609b1343738f3df304566c6b59e57a2, package_extract_file("patch/system/app/OneTimeInitializer.apk.p"));
+set_progress(0.486882);
+apply_patch("/system/app/OneTimeInitializer.odex", "-",
+            9fdc107fffa7e266808abe9822ea7266a99c4853, 8304,
+            a63d46090b88df94b1eb5c05d41045af84faafc0, package_extract_file("patch/system/app/OneTimeInitializer.odex.p"));
+set_progress(0.486929);
+apply_patch("/system/app/PackageInstaller.apk", "-",
+            91a22845c2d83dc7f2d89ee1ec6df8a7b00e79f3, 216575,
+            0a7118c62e69eac4e8d4e65336dbac2e1dff33cc, package_extract_file("patch/system/app/PackageInstaller.apk.p"));
+set_progress(0.488169);
+apply_patch("/system/app/PackageInstaller.odex", "-",
+            8da49e6c841fd2b5e78b1c760042bb954e2d9392, 120560,
+            904d710319a97de278b07df90d0d56a9b0a5f421, package_extract_file("patch/system/app/PackageInstaller.odex.p"));
+set_progress(0.488859);
+apply_patch("/system/app/PhaseBeam.odex", "-",
+            6b707c27a16f024fc0e03b8aa56eb2078fcdb953, 22672,
+            94db895cb24969bc16601e636c072733e292df75, package_extract_file("patch/system/app/PhaseBeam.odex.p"));
+set_progress(0.488989);
+apply_patch("/system/app/Phone.apk", "-",
+            47a648f3ab72ea810aeed9cd68c227865f1f2e89, 1736244,
+            17689a304bc2cf3f810d9d0ae05029c306d1206c, package_extract_file("patch/system/app/Phone.apk.p"));
+set_progress(0.498930);
+apply_patch("/system/app/Phone.odex", "-",
+            88f08191bd8c15e95ff8035f39ff024686e530c7, 555968,
+            25a85ef11082ab9120d73c1d22505ecee06aebf0, package_extract_file("patch/system/app/Phone.odex.p"));
+set_progress(0.502113);
+apply_patch("/system/app/PhotoTable.apk", "-",
+            e914512fe921cb3abc4b2a12a6f9f109e4896f0a, 413879,
+            f7a413592669e68cd698f0ca6a6344fee5a967b6, package_extract_file("patch/system/app/PhotoTable.apk.p"));
+set_progress(0.504483);
+apply_patch("/system/app/PhotoTable.odex", "-",
+            c9887a160f035f0dda2c7528840daebceb6dad33, 71672,
+            4dc5db0aff73ff758512a88a5086f512f8e264a6, package_extract_file("patch/system/app/PhotoTable.odex.p"));
+set_progress(0.504894);
+apply_patch("/system/app/Settings.apk", "-",
+            d1b5210f97f3fe6217996747573abe64e0c5d028, 6291260,
+            823cb12c3d5db019e6886d722fd6d46a118837d6, package_extract_file("patch/system/app/Settings.apk.p"));
+set_progress(0.540915);
+apply_patch("/system/app/Settings.odex", "-",
+            ccebeeeea813af1b9ba25fbd126a122b3ebe52eb, 1448880,
+            00ef02def30309dc4cb1481e606c6741f863e904, package_extract_file("patch/system/app/Settings.odex.p"));
+set_progress(0.549210);
+apply_patch("/system/app/SettingsProvider.apk", "-",
+            0f004e48c53c9b69bdca4214fb1c4ef3455521f3, 26419,
+            3ced30a07df8664332b212a087fc0d90b1445317, package_extract_file("patch/system/app/SettingsProvider.apk.p"));
+set_progress(0.549362);
+apply_patch("/system/app/SettingsProvider.odex", "-",
+            2445617788682549b08557580974646cc086d643, 79080,
+            254fb8a59796a70227e1aa925ecb874ba321f58e, package_extract_file("patch/system/app/SettingsProvider.odex.p"));
+set_progress(0.549814);
+apply_patch("/system/app/SetupWizard.odex", "-",
+            ac3b4f601846a740119fdbfa21ebe4442faf1d64, 343080,
+            f1434cd291d64c5a5ade8b511c56ff731a4966a4, package_extract_file("patch/system/app/SetupWizard.odex.p"));
+set_progress(0.551779);
+apply_patch("/system/app/SharedStorageBackup.apk", "-",
+            98db1c3eed383b478d2ca842a463a975854e80b0, 2568,
+            22a5f60c3738c19e376fd9a0323fa6b7dcaa375b, package_extract_file("patch/system/app/SharedStorageBackup.apk.p"));
+set_progress(0.551793);
+apply_patch("/system/app/SharedStorageBackup.odex", "-",
+            7d8fe7705dfd5c4bf9b36071f7ba3f44ff952563, 4336,
+            89b69b2b3e1c0c96b5ea21095d972cf4d80250c7, package_extract_file("patch/system/app/SharedStorageBackup.odex.p"));
+set_progress(0.551818);
+apply_patch("/system/app/SoundRecorder.apk", "-",
+            7092e1a25e01698dd8e47838898ca8eeac17d924, 100085,
+            4f62712b095086d05dc3cb56906080e1c82888a4, package_extract_file("patch/system/app/SoundRecorder.apk.p"));
+set_progress(0.552391);
+apply_patch("/system/app/SoundRecorder.odex", "-",
+            3651d75f75654049877a352ae2d0895979f4490c, 25280,
+            087f4795ea82edb2e99f4bdc132f6b3d7ca200eb, package_extract_file("patch/system/app/SoundRecorder.odex.p"));
+set_progress(0.552536);
+apply_patch("/system/app/Stk.apk", "-",
+            d25908aab13337b75f226dd9cd746f9216c5e24f, 56530,
+            b412ce96483669ebac6c75e5f3b0661805ada753, package_extract_file("patch/system/app/Stk.apk.p"));
+set_progress(0.552860);
+apply_patch("/system/app/Stk.odex", "-",
+            b2f5727de0b1cdf971dae3cd15836884056aadb4, 45952,
+            2b2b55252debc49bc233eff317c4c2e6e0e6afe2, package_extract_file("patch/system/app/Stk.odex.p"));
+set_progress(0.553123);
+apply_patch("/system/app/SystemUI.apk", "-",
+            3e1a1fa64190817d3e28df53e70cc6e30c1c1d03, 1428427,
+            d548320e1a9630df88335acd3cdbd5a2e61677ce, package_extract_file("patch/system/app/SystemUI.apk.p"));
+set_progress(0.561301);
+apply_patch("/system/app/SystemUI.odex", "-",
+            40b3784ad86e69f57116c230ae8a29ae929e6d91, 484424,
+            0b4ea037abd9cfeeb44eef9065ef492cbead32ef, package_extract_file("patch/system/app/SystemUI.odex.p"));
+set_progress(0.564075);
+apply_patch("/system/app/TagGoogle.odex", "-",
+            937053b2f23a23406b1e67cdb06870bb57720e70, 307160,
+            32285bb7165a577cb92d3c2f9fc026a678d732fb, package_extract_file("patch/system/app/TagGoogle.odex.p"));
+set_progress(0.565834);
+apply_patch("/system/app/Talk.apk", "-",
+            e7a7b5d060c2c52a817dd0ec648790621ff30a3c, 1345458,
+            a681c503abf2572c07980eebd01492972a61a0f9, package_extract_file("patch/system/app/Talk.apk.p"));
+set_progress(0.573537);
+apply_patch("/system/app/Talk.odex", "-",
+            3c4152223f1dc82e620f3cfdc72fb92c8fdb8937, 1223800,
+            3530d9efe132ef9a7d5f488f659b6bfbfef75abc, package_extract_file("patch/system/app/Talk.odex.p"));
+set_progress(0.580544);
+apply_patch("/system/app/TelephonyProvider.apk", "-",
+            d81705acf12a4c03d8cc7a6b1886d7f8e5e2b7b0, 48423,
+            3285bf646795e518d42216b85a73cabb92f4439a, package_extract_file("patch/system/app/TelephonyProvider.apk.p"));
+set_progress(0.580821);
+apply_patch("/system/app/TelephonyProvider.odex", "-",
+            9ebe0ac9371bc96a0cb3f93c430254226c930f3c, 100624,
+            0d3c3ad5c56253768ef469c913e177d3eedc4b25, package_extract_file("patch/system/app/TelephonyProvider.odex.p"));
+set_progress(0.581398);
+apply_patch("/system/app/UserDictionaryProvider.apk", "-",
+            e4d62a115853ce742a42f322d002c45a260e6ca0, 3516,
+            629fbac37b40d299bcd1126146e80e48f346b1b8, package_extract_file("patch/system/app/UserDictionaryProvider.apk.p"));
+set_progress(0.581418);
+apply_patch("/system/app/UserDictionaryProvider.odex", "-",
+            2b53ec17db8da35ae66a31ae84978baed0339e2a, 15480,
+            8e5e752e6b841b031006e9dcb79abaa954782fd8, package_extract_file("patch/system/app/UserDictionaryProvider.odex.p"));
+set_progress(0.581506);
+apply_patch("/system/app/Velvet.apk", "-",
+            b8ca286320e374b9ce4105f7e8cf20e01713c263, 4989577,
+            8db3518f2c64a6199b81bd518fff30f15e5de18e, package_extract_file("patch/system/app/Velvet.apk.p"));
+set_progress(0.610075);
+apply_patch("/system/app/Velvet.odex", "-",
+            801bef69a27dfee566719426004ca6d69879d5fc, 3789232,
+            82d50b10959da6681ca1d8e7b9711e98047cf5b4, package_extract_file("patch/system/app/Velvet.odex.p"));
+set_progress(0.631770);
+apply_patch("/system/app/VideoEditorGoogle.odex", "-",
+            185b418f41b544ec9206b6f363c06a26d6d30472, 390768,
+            a59e0e870dd6989c159fa00d1786e8737c90c9d3, package_extract_file("patch/system/app/VideoEditorGoogle.odex.p"));
+set_progress(0.634008);
+apply_patch("/system/app/Videos.apk", "-",
+            08e4b4c98600148b76fd199aeaa7229bab08de6f, 1912530,
+            4df160288900b2a344398e4809b27b9d166625fd, package_extract_file("patch/system/app/Videos.apk.p"));
+set_progress(0.644958);
+apply_patch("/system/app/VisualizationWallpapers.apk", "-",
+            c332d9b7db95b7f10cfb04ed6031821c36084d62, 170358,
+            f552577010ce0122c3a82e9edcbbb50db0684d83, package_extract_file("patch/system/app/VisualizationWallpapers.apk.p"));
+set_progress(0.645933);
+apply_patch("/system/app/VisualizationWallpapers.odex", "-",
+            d5b7a8c17df641ff4c1e630eeb92403b80b01b11, 38008,
+            24270b15a582581fb511e70cf4016fc10b1120cc, package_extract_file("patch/system/app/VisualizationWallpapers.odex.p"));
+set_progress(0.646151);
+apply_patch("/system/app/VoiceSearchStub.odex", "-",
+            86fec5fd08ea1603677aa4fac8a5d417a696521b, 3960,
+            a13033b000c5792d35d00aca674a82a877693947, package_extract_file("patch/system/app/VoiceSearchStub.odex.p"));
+set_progress(0.646174);
+apply_patch("/system/app/VpnDialogs.apk", "-",
+            989fa7d3c9c3c6ca2d434c08e83b4cb4b1cfbfe2, 39853,
+            c4bdd3226bd1514275e2ac76ca88742f1e5c216c, package_extract_file("patch/system/app/VpnDialogs.apk.p"));
+set_progress(0.646402);
+apply_patch("/system/app/VpnDialogs.odex", "-",
+            ea82ea961fc79b1ca4597c647fb66bee3ef7d257, 9200,
+            89ac7eedef545b1bcb8c7a5f49e1ebd743f45422, package_extract_file("patch/system/app/VpnDialogs.odex.p"));
+set_progress(0.646454);
+apply_patch("/system/app/YouTube.odex", "-",
+            f9b6848075d2f42a6f0d466b0bd286e405e4b5b1, 3844192,
+            d45ee76988ef1b1944f08006823e89b8ace3a700, package_extract_file("patch/system/app/YouTube.odex.p"));
+set_progress(0.668465);
+apply_patch("/system/bin/debuggerd", "-",
+            9e60bb1bedd5097725f9b05401b42e1fd58823c9, 21824,
+            94614068daa426cae09cef2899748a52ed6a50ad, package_extract_file("patch/system/bin/debuggerd.p"));
+set_progress(0.668590);
+apply_patch("/system/bin/hostapd", "-",
+            63df79f3f52434b735bbfd109ae5682c814d150d, 293288,
+            ce861993a140ac41cb8e20dd7272691779a30c8b, package_extract_file("patch/system/bin/hostapd.p"));
+set_progress(0.670269);
+apply_patch("/system/bin/mdnsd", "-",
+            c801b466b6312d29572423c5a4ff000b14e455ed, 259532,
+            0305fb79907a8cd0b8a89d3eaee4c7b0ff2aeee3, package_extract_file("patch/system/bin/mdnsd.p"));
+set_progress(0.671755);
+apply_patch("/system/bin/wpa_supplicant", "-",
+            ea405c3360dac86ee9868249ddf1a82152165452, 670356,
+            7107d1f2562465b810d2b6d8a9fb580674d2b50a, package_extract_file("patch/system/bin/wpa_supplicant.p"));
+set_progress(0.675593);
+apply_patch("/system/etc/NOTICE.html.gz", "-",
+            3b40416c87a7549a0f40cd89a0e7d351b2adaf71, 141204,
+            9edcb16026d277f37165c9ba5afd35418915304a, package_extract_file("patch/system/etc/NOTICE.html.gz.p"));
+set_progress(0.676402);
+apply_patch("/system/etc/recovery-resource.dat", "-",
+            dfb87e7703ef7c35bceefeb104670ae900b11766, 294684,
+            646465870133a0d0183568fa85b964a010aea408, package_extract_file("patch/system/etc/recovery-resource.dat.p"));
+set_progress(0.678089);
+apply_patch("/system/framework/am.jar", "-",
+            811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/am.jar.p"));
+set_progress(0.678091);
+apply_patch("/system/framework/am.odex", "-",
+            d56b7ecf398170256b04d22ea10c65c4b01235ee, 45472,
+            ac85c229ad23375c8c3d9d077a7a82c595217e4c, package_extract_file("patch/system/framework/am.odex.p"));
+set_progress(0.678351);
+apply_patch("/system/framework/android.policy.jar", "-",
+            d5c9afa44d972500bd9ef610f1ed544a3920e9e4, 313,
+            70fd8d56bdaa69aa609364091935533336dcc3db, package_extract_file("patch/system/framework/android.policy.jar.p"));
+set_progress(0.678353);
+apply_patch("/system/framework/android.policy.odex", "-",
+            c7f29613ca2f667a87ea0e13a421cbb513d30cad, 632776,
+            0fc71642c4c0f858a5adb3a65d9cb2db8ff70924, package_extract_file("patch/system/framework/android.policy.odex.p"));
+set_progress(0.681976);
+apply_patch("/system/framework/android.test.runner.jar", "-",
+            148c96930df6095d71fc3dd2c1669bf02a881682, 313,
+            3688bd38a5183674a5dfb0ebe984516faac7d966, package_extract_file("patch/system/framework/android.test.runner.jar.p"));
+set_progress(0.681978);
+apply_patch("/system/framework/android.test.runner.odex", "-",
+            29897bdd269b72322c818fe2314a8bf8bb14de27, 186632,
+            a8dfa27c0ba678f287549309341938326d874183, package_extract_file("patch/system/framework/android.test.runner.odex.p"));
+set_progress(0.683046);
+apply_patch("/system/framework/apache-xml.jar", "-",
+            2029e39657f08d82c48d94ca23c25cd4faa1db92, 18027,
+            ad24902ffa446080d83e92c54befa7dca2d9ceac, package_extract_file("patch/system/framework/apache-xml.jar.p"));
+set_progress(0.683149);
+apply_patch("/system/framework/apache-xml.odex", "-",
+            85a56e2888e8ce2484834568fc3eb054e17e0df1, 1378592,
+            b681d28b3661635d8f01cbbcf24cd7ea5b484557, package_extract_file("patch/system/framework/apache-xml.odex.p"));
+set_progress(0.691043);
+apply_patch("/system/framework/bmgr.jar", "-",
+            811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/bmgr.jar.p"));
+set_progress(0.691044);
+apply_patch("/system/framework/bmgr.odex", "-",
+            0026a9ea6914443732afadf289d133272e07174f, 14792,
+            246c2f48d24ab383ccfbbd04e5cb824d1b76e092, package_extract_file("patch/system/framework/bmgr.odex.p"));
+set_progress(0.691129);
+apply_patch("/system/framework/bouncycastle.jar", "-",
+            6f0200adfa8469107da0b9915a7ccbb1fd8b6ecc, 313,
+            1f679ce12ee5d900fd2e743828d0aa097d6a88e3, package_extract_file("patch/system/framework/bouncycastle.jar.p"));
+set_progress(0.691131);
+apply_patch("/system/framework/bouncycastle.odex", "-",
+            d3d6c0528a7803ed27907c508a1c1d4037583fbc, 1082960,
+            9517ec97a478f7b1ab0598c4159cf86546a979ea, package_extract_file("patch/system/framework/bouncycastle.odex.p"));
+set_progress(0.697331);
+apply_patch("/system/framework/bu.jar", "-",
+            811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/bu.jar.p"));
+set_progress(0.697333);
+apply_patch("/system/framework/bu.odex", "-",
+            75fc845e3a9f3ca6e2b10ca0011a96a5db73061e, 4624,
+            fac58a4d197acef5bc14b79a9d6c4616986972e9, package_extract_file("patch/system/framework/bu.odex.p"));
+set_progress(0.697360);
+apply_patch("/system/framework/com.android.future.usb.accessory.jar",
+            "-", 811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/com.android.future.usb.accessory.jar.p"));
+set_progress(0.697361);
+apply_patch("/system/framework/com.android.future.usb.accessory.odex",
+            "-", a463e8ba4a81a441402d7f5edecf0d578b850252, 6048,
+            101335542d5535b4ba703885d242e95058fdbe7c, package_extract_file("patch/system/framework/com.android.future.usb.accessory.odex.p"));
+set_progress(0.697396);
+apply_patch("/system/framework/com.android.location.provider.jar",
+            "-", 811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/com.android.location.provider.jar.p"));
+set_progress(0.697398);
+apply_patch("/system/framework/com.android.location.provider.odex",
+            "-", 69e63e7f2f09862984ea541099056f3704458b5f, 9544,
+            d0bfe9cc9f45275d1eafc4a9a2435399bea9f76c, package_extract_file("patch/system/framework/com.android.location.provider.odex.p"));
+set_progress(0.697453);
+apply_patch("/system/framework/com.android.nfc_extras.jar", "-",
+            015c992987c5a4dba6ed54b4a67cbd563441d7b8, 313,
+            a4f401809116ad9bf65d0592ab59ecc78bf4725a, package_extract_file("patch/system/framework/com.android.nfc_extras.jar.p"));
+set_progress(0.697454);
+apply_patch("/system/framework/com.android.nfc_extras.odex", "-",
+            8eff2276f47c2894ae462f73835a4e941d42b5d1, 9432,
+            529ef57e09b32c3f87a77937f9dd374437e2a923, package_extract_file("patch/system/framework/com.android.nfc_extras.odex.p"));
+set_progress(0.697508);
+apply_patch("/system/framework/com.google.android.maps.jar", "-",
+            67697faa21006e9bc7705e939f0781794d3b9275, 313,
+            48e75dfef6146bd805206c76e9ca87e5bdead919, package_extract_file("patch/system/framework/com.google.android.maps.jar.p"));
+set_progress(0.697510);
+apply_patch("/system/framework/com.google.android.maps.odex", "-",
+            7d9d1da0d251d7f644689eead18013628117f60d, 388232,
+            3823cd26a63ffbdb6697e8801c171c5889fbb33d, package_extract_file("patch/system/framework/com.google.android.maps.odex.p"));
+set_progress(0.699733);
+apply_patch("/system/framework/com.google.android.media.effects.jar",
+            "-", a8c5a2b4469311c003be4db42027d72487ed1dd9, 313,
+            cf0e61eb17a730e1caf6cafa4f6a096eaa5c4f2c, package_extract_file("patch/system/framework/com.google.android.media.effects.jar.p"));
+set_progress(0.699735);
+apply_patch("/system/framework/com.google.android.media.effects.odex",
+            "-", 0163dad54e7f79ba1a69cbb1694e6c144cdbaf9f, 94216,
+            4f253dafc6aa9091f99ffb404774c81d86711d0a, package_extract_file("patch/system/framework/com.google.android.media.effects.odex.p"));
+set_progress(0.700274);
+apply_patch("/system/framework/com.google.widevine.software.drm.jar",
+            "-", 811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/com.google.widevine.software.drm.jar.p"));
+set_progress(0.700276);
+apply_patch("/system/framework/com.google.widevine.software.drm.odex",
+            "-", ea3ee6e155c310103ca8626c2d581387153b31d0, 1192,
+            c423616286e9ed92d206c2c6b98d439d77415b32, package_extract_file("patch/system/framework/com.google.widevine.software.drm.odex.p"));
+set_progress(0.700283);
+apply_patch("/system/framework/content.jar", "-",
+            811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            8b69e9d6018a2df815fc3b8a07b9a9306c1a2a01, package_extract_file("patch/system/framework/content.jar.p"));
+set_progress(0.700285);
+apply_patch("/system/framework/content.odex", "-",
+            d104c560ca5e7227b4665ed91346c6d82caa1dd0, 14624,
+            118d6ca9bc012b1fbf2e287777320c7122aee28a, package_extract_file("patch/system/framework/content.odex.p"));
+set_progress(0.700368);
+apply_patch("/system/framework/core-junit.jar", "-",
+            c94f0d836b4641f269d0b16aafbef82624baf7c2, 313,
+            79a65f57613fcd8f313164e1ec45eecd491e55bf, package_extract_file("patch/system/framework/core-junit.jar.p"));
+set_progress(0.700370);
+apply_patch("/system/framework/core-junit.odex", "-",
+            98dc8cec8a86d2fc765c425054ae9adab455adf7, 27576,
+            187d49702836cb9c8ecc1089c9f60e3fedbc85ab, package_extract_file("patch/system/framework/core-junit.odex.p"));
+set_progress(0.700528);
+apply_patch("/system/framework/core.jar", "-",
+            01149baaf0c0154ee522b2f9d11336fb5460062c, 3126,
+            43167ff1570417f86a5389497ad6a346e8230d49, package_extract_file("patch/system/framework/core.jar.p"));
+set_progress(0.700546);
+apply_patch("/system/framework/core.odex", "-",
+            3c321c15d8ce79683abdaa1244805cc9d063e3c2, 3475472,
+            15bd7e3c153b02cc869eee784548b0116efd121c, package_extract_file("patch/system/framework/core.odex.p"));
+set_progress(0.720445);
+apply_patch("/system/framework/ext.jar", "-",
+            0d459e9ea6b3f444c7fa658283372d9483316335, 574574,
+            662fcf6f74834040d0866b97bf66ae963e6cd213, package_extract_file("patch/system/framework/ext.jar.p"));
+set_progress(0.723735);
+apply_patch("/system/framework/ext.odex", "-",
+            95365c7f24f097ed55d1a0b6fd5eedae1df47757, 1504592,
+            635a3112d517546e626863a77345f49ebd06dac1, package_extract_file("patch/system/framework/ext.odex.p"));
+set_progress(0.732350);
+apply_patch("/system/framework/framework-res.apk", "-",
+            356a27997262f398c3262309b5af835cf760298d, 10783770,
+            beb094fd73b698e3489abab886140909d897fe37, package_extract_file("patch/system/framework/framework-res.apk.p"));
+set_progress(0.794093);
+apply_patch("/system/framework/framework.jar", "-",
+            fb3f7da850fa0117fcf2b10143cc76e8e611861e, 16476,
+            e37f37dc54dd9a87daabc04a69b5014fce6f53cd, package_extract_file("patch/system/framework/framework.jar.p"));
+set_progress(0.794187);
+apply_patch("/system/framework/framework.odex", "-",
+            295eccb7a4f1c46afd87a68111c1eea05ea039df, 10417800,
+            baf717c3680f5d8ddb427668c1f0ec11da82ac4b, package_extract_file("patch/system/framework/framework.odex.p"));
+set_progress(0.853835);
+apply_patch("/system/framework/ime.jar", "-",
+            811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/ime.jar.p"));
+set_progress(0.853837);
+apply_patch("/system/framework/ime.odex", "-",
+            48b91bbe9c59499c64be1d67c48b3956c4b1ac6d, 6768,
+            c06f3a5d824bda7739d1810cf06e75364c7d3630, package_extract_file("patch/system/framework/ime.odex.p"));
+set_progress(0.853876);
+apply_patch("/system/framework/input.jar", "-",
+            811136f699563407c6336b962deb56a2da6f4c0f, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/input.jar.p"));
+set_progress(0.853878);
+apply_patch("/system/framework/input.odex", "-",
+            fb6811153004a70a76cecaecb1a0db1f97d10830, 6760,
+            58d2cccb087c9b0e6821a2d969cbcee438ae9fc8, package_extract_file("patch/system/framework/input.odex.p"));
+set_progress(0.853916);
+apply_patch("/system/framework/javax.obex.jar", "-",
+            1243a7381618672612969ef3f441b15094a96d90, 313,
+            4ba21130b559543af995edb10b36f04dbaa34cab, package_extract_file("patch/system/framework/javax.obex.jar.p"));
+set_progress(0.853918);
+apply_patch("/system/framework/javax.obex.odex", "-",
+            ae196e4543318c57cfdf691168ca7b03368b2c89, 58256,
+            b87c7c3c0354091d6a7c7f745e814cc5571d4f76, package_extract_file("patch/system/framework/javax.obex.odex.p"));
+set_progress(0.854252);
+apply_patch("/system/framework/mms-common.jar", "-",
+            67697faa21006e9bc7705e939f0781794d3b9275, 313,
+            48e75dfef6146bd805206c76e9ca87e5bdead919, package_extract_file("patch/system/framework/mms-common.jar.p"));
+set_progress(0.854253);
+apply_patch("/system/framework/mms-common.odex", "-",
+            86817b4fd538670ab149cfc12728b69b8d3bbda4, 130136,
+            056c0ae9dc2adcfec2868697a6cfddd51f96ebc4, package_extract_file("patch/system/framework/mms-common.odex.p"));
+set_progress(0.854999);
+apply_patch("/system/framework/monkey.jar", "-",
+            96c65b113569561103d6dd368a94f89e5557a398, 313,
+            47409d2b1c0510c9cfca80e63d450e9274f3b27a, package_extract_file("patch/system/framework/monkey.jar.p"));
+set_progress(0.855000);
+apply_patch("/system/framework/monkey.odex", "-",
+            efd44dcb3926e742e961cf159f91cd1975330e9a, 117808,
+            d14c22d8aca5375a1f68ecbf6b540d53dc7f628a, package_extract_file("patch/system/framework/monkey.odex.p"));
+set_progress(0.855675);
+apply_patch("/system/framework/pm.jar", "-",
+            4dda942fa2a68f097cd1ac6f92ec69fada502533, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/pm.jar.p"));
+set_progress(0.855677);
+apply_patch("/system/framework/pm.odex", "-",
+            61c11e45800d761699d11680c2ab628f5d0dca40, 39952,
+            7e5288a45b6003fb13ef7f01331faaa141e000bd, package_extract_file("patch/system/framework/pm.odex.p"));
+set_progress(0.855905);
+apply_patch("/system/framework/requestsync.jar", "-",
+            4dda942fa2a68f097cd1ac6f92ec69fada502533, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/requestsync.jar.p"));
+set_progress(0.855907);
+apply_patch("/system/framework/requestsync.odex", "-",
+            852bbc12a898b18d6e020dd0d48a96b7d8c03af1, 8904,
+            14530ab1a3ddaa8c940690c7d60f06e82984a86c, package_extract_file("patch/system/framework/requestsync.odex.p"));
+set_progress(0.855958);
+apply_patch("/system/framework/send_bug.jar", "-",
+            4dda942fa2a68f097cd1ac6f92ec69fada502533, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/send_bug.jar.p"));
+set_progress(0.855960);
+apply_patch("/system/framework/send_bug.odex", "-",
+            3fe479e29ddf5329f9973048e65ab835925ee0f8, 6912,
+            a25284d81723ac1631dc21d4c4ddf18422d15b2f, package_extract_file("patch/system/framework/send_bug.odex.p"));
+set_progress(0.856000);
+apply_patch("/system/framework/services.jar", "-",
+            d0e5154044e5705cc54d039d2f64d28ea0a8bcf6, 313,
+            26122aaddd7a6b6fb362ae60c574359d86b59026, package_extract_file("patch/system/framework/services.jar.p"));
+set_progress(0.856001);
+apply_patch("/system/framework/services.odex", "-",
+            26da4a91e9592825140a8227ba2181063a71c4f2, 2676216,
+            f0dd5d43143d09aa3bebd1e802b52b572a4eb4bb, package_extract_file("patch/system/framework/services.odex.p"));
+set_progress(0.871324);
+apply_patch("/system/framework/settings.jar", "-",
+            4dda942fa2a68f097cd1ac6f92ec69fada502533, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/settings.jar.p"));
+set_progress(0.871326);
+apply_patch("/system/framework/settings.odex", "-",
+            13d964c7f858916c93f0f572ea64e8cbd5988f74, 8080,
+            35dd61074665c4c24f1e5a6fe7dec54b014d59d1, package_extract_file("patch/system/framework/settings.odex.p"));
+set_progress(0.871372);
+apply_patch("/system/framework/svc.jar", "-",
+            4dda942fa2a68f097cd1ac6f92ec69fada502533, 313,
+            7e48616e6f034fa96be61b268f79d0f4f3bfacbd, package_extract_file("patch/system/framework/svc.jar.p"));
+set_progress(0.871374);
+apply_patch("/system/framework/svc.odex", "-",
+            cd0a0c67300f973d66ff13b09dabfaea14fb6c05, 9704,
+            cd14a0f5d6ff2856b253799e5bda579481a677a6, package_extract_file("patch/system/framework/svc.odex.p"));
+set_progress(0.871430);
+apply_patch("/system/framework/telephony-common.jar", "-",
+            fc7e941ce2c36e3847a670114259262dcd448f74, 313,
+            70fd8d56bdaa69aa609364091935533336dcc3db, package_extract_file("patch/system/framework/telephony-common.jar.p"));
+set_progress(0.871431);
+apply_patch("/system/framework/telephony-common.odex", "-",
+            6d2ace741f2c9f82ed97d43c6b240f2f4d0091a7, 1184952,
+            96d82e13203573acc24c2d98210e40bf0cb7892d, package_extract_file("patch/system/framework/telephony-common.odex.p"));
+set_progress(0.878216);
+apply_patch("/system/framework/uiautomator.jar", "-",
+            6efbda38f373b2f2067a69f9deebe92a1bf80368, 313,
+            49c87471007e5020a12294ab5a7d4490272d7696, package_extract_file("patch/system/framework/uiautomator.jar.p"));
+set_progress(0.878218);
+apply_patch("/system/framework/uiautomator.odex", "-",
+            4e3ddde7d5ed6904bbcca8ca7643dbb0751e439d, 88976,
+            7fb510fcfeb282440c61953480fa94209d34ec4d, package_extract_file("patch/system/framework/uiautomator.odex.p"));
+set_progress(0.878727);
+apply_patch("/system/lib/hw/bluetooth.default.so", "-",
+            013ac4d84f1217fb69816704358e66b967cdae02, 757460,
+            36b3f0274c9edf76b112ab074f9e3081aed33e48, package_extract_file("patch/system/lib/hw/bluetooth.default.so.p"));
+set_progress(0.883064);
+apply_patch("/system/lib/libbcc.sha1.so", "-",
+            9182b21968120f1e2fdaac454124976cfb25d832, 5056,
+            e9de37e910cca5a0f8e6ffc2542d571ca6c383a2, package_extract_file("patch/system/lib/libbcc.sha1.so.p"));
+set_progress(0.883093);
+apply_patch("/system/lib/libbcc.so", "-",
+            fe27025ebe7c3c8d884fc0a79985a11268f76cf8, 6870468,
+            ab1c66bbc0d1391480541d4c12a60d54582368ae, package_extract_file("patch/system/lib/libbcc.so.p"));
+set_progress(0.922431);
+apply_patch("/system/lib/libbcinfo.so", "-",
+            61cbfa42cd0a230f3fff90a433cbf1f9aedfaa3b, 1160612,
+            5b8452ff865e1777e0d716d546dc91fd6b615926, package_extract_file("patch/system/lib/libbcinfo.so.p"));
+set_progress(0.929076);
+apply_patch("/system/lib/libchromium_net.so", "-",
+            e47fbcdda4e7eae399b68531f4893766938cee1f, 1707388,
+            ea66c0849ea9037ec4e42cc5afdc09a3ddf74b2a, package_extract_file("patch/system/lib/libchromium_net.so.p"));
+set_progress(0.938852);
+apply_patch("/system/lib/libmdnssd.so", "-",
+            29071b465aa088d347b5154003f316cfac8d76b2, 21664,
+            9f7dbc13a9c19eae290ca6f73def40910e3c1f08, package_extract_file("patch/system/lib/libmdnssd.so.p"));
+set_progress(0.938976);
+apply_patch("/system/lib/libmllite.so", "-",
+            16cf6bdde292191572f2e1d43a6e1a48f83cde0f, 83464,
+            ae805bf63acca562fa2c17ddfaf8740b4217dd73, package_extract_file("patch/system/lib/libmllite.so.p"));
+set_progress(0.939453);
+apply_patch("/system/lib/libpatts_engine_jni_api.so", "-",
+            38108af907c80e3815bab0db9acfdaab5fabee18, 2154088,
+            295180f977b36d5c8729723577aab26005c9bd09, package_extract_file("patch/system/lib/libpatts_engine_jni_api.so.p"));
+set_progress(0.951787);
+apply_patch("/system/lib/libstagefright_soft_aacdec.so", "-",
+            d7a86238399df6e790d5cf907cb0c258c995cf25, 222704,
+            dfe03b3cda3c972fa6891a70e486a6d72fcbac62, package_extract_file("patch/system/lib/libstagefright_soft_aacdec.so.p"));
+set_progress(0.953062);
+apply_patch("/system/lib/libstagefright_soft_aacenc.so", "-",
+            53a5a4bd5a462cf4eb4cb6ad391d3abd308f2c66, 275696,
+            2a46fde1f6a1f88c7377fdbe43c8bcdb76e71b25, package_extract_file("patch/system/lib/libstagefright_soft_aacenc.so.p"));
+set_progress(0.954641);
+apply_patch("/system/lib/libwebcore.so", "-",
+            527d35b3c8e6332fffab8033158240e04ff97236, 7549652,
+            6f5c08ac25806db3e34fc2255d1423ec0e3b60c9, package_extract_file("patch/system/lib/libwebcore.so.p"));
+set_progress(0.997867);
+apply_patch("/system/lib/libwebrtc_audio_preprocessing.so", "-",
+            32b7063cde154bd790c82cc963bc13f3e8202f68, 370024,
+            c61d73f022f6ffe78aae2bf9a65cd9995dfd9692, package_extract_file("patch/system/lib/libwebrtc_audio_preprocessing.so.p"));
+set_progress(0.999985);
+delete("/system/recovery-from-boot.p",
+       "/system/etc/install-recovery.sh");
+show_progress(0.100000, 10);
+ui_print("Unpacking new recovery...");
+package_extract_dir("recovery", "/system");
+ui_print("Symlinks and permissions...");
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm(0, 3003, 02750, "/system/bin/netcfg");
+set_perm(0, 3004, 02755, "/system/bin/ping");
+set_perm(0, 2000, 06750, "/system/bin/run-as");
+set_perm(1002, 1002, 0440, "/system/etc/dbus.conf");
+set_perm(1014, 2000, 0550, "/system/etc/dhcpcd/dhcpcd-run-hooks");
+set_perm(0, 2000, 0550, "/system/etc/init.goldfish.sh");
+set_perm(0, 0, 0544, "/system/etc/install-recovery.sh");
+set_perm_recursive(0, 0, 0755, 0555, "/system/etc/ppp");
+set_perm(0, 2000, 0755, "/system/vendor");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/vendor/bin");
+set_perm(0, 2000, 0755, "/system/vendor/etc");
+set_perm(0, 2000, 0755, "/system/vendor/firmware");
+set_perm(0, 2000, 0755, "/system/vendor/lib");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/drm");
+set_perm(0, 0, 0644, "/system/vendor/lib/drm/libdrmwvmplugin.so");
+set_perm(0, 2000, 0755, "/system/vendor/lib/egl");
+set_perm(0, 2000, 0755, "/system/vendor/lib/hw");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/pittpatt");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/res");
+set_perm(0, 0, 0644, "/system/vendor/res/images/dock/dock.png");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");
+ui_print("Fixing fs_size in crypto footer...");
+assert(samsung.fs_size_fix());
+ui_print("Patching remaining system files...");
+apply_patch("/system/build.prop", "-",
+            777f25915783c16aa8c96f3f9d39a185510e8270, 2564,
+            57ea455685700f09b3a35eb642e9b0fbbe21c73e, package_extract_file("patch/system/build.prop.p"));
+set_perm(0, 0, 0644, "/system/build.prop");
+unmount("/system");

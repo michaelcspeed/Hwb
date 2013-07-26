@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/background" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/vocabicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/vocab_button"
+                android:contentDescription="@string/vocab_button"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/score_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_bar"
+            android:layout_below="@+id/top_bar" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/background" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical" >
+
+                    <TextView
+                        android:id="@+id/correct_out_of_20"
+                        style="@style/big_time_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="14 / 20"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/qs_correctly"
+                        style="@style/header_texr_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/correct_out_of_20"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:text="@string/postio_apos_r_canlyniad_drwy_gyfrwng_cymdeithasol_post_the_result_through_social_media_"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:id="@+id/sep2"
+                        style="@style/seperator_view_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/sep_height"
+                        android:layout_below="@+id/qs_correctly" />
+
+                    <Button
+                        android:id="@+id/shareButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/post_facebook_button"
+                        android:gravity="center_horizontal"
+						android:layout_below="@id/sep2"
+						android:layout_marginTop="@dimen/normal_button_height"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                    
+                    <TextView
+                        android:id="@+id/successText"
+                        style="@style/header_texr_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shareButton"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:text="Posted Successfully!"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shareBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_bar"
+            android:padding="10dp" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

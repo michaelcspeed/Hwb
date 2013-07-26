@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/answerbuttonAdisabled" android:state_enabled="false"/>
+    <item android:drawable="@color/answerbuttonApressed" android:state_pressed="true"/>
+    <item android:drawable="@color/answerbuttonAfocussed" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@color/answerbuttonA" android:state_enabled="true"/>
+
+</selector>

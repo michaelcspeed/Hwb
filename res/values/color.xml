@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#2C2318</color>
+    
+    <color name="yellowbuttons">#EA9D24</color>
+    <color name="yellowbuttonpressed">#83C3D9</color>
+    <color name="yellowbuttonfocussed">#AECED9</color>
+    <color name="yellowbuttondisabled">#EAD3B0</color>
+    
+    <color name="answerbuttonA">#E0E0E0</color>
+    <color name="answerbuttonApressed">#EA9D24</color>
+    <color name="answerbuttonAfocussed">#E0E0E0</color>
+    <color name="answerbuttonAdisabled">#EAD3B0</color>
+    
+    <color name="answerbuttonB">#83C3D9</color>
+    <color name="answerbuttonBpressed">#EA9D24</color>
+    <color name="answerbuttonBfocussed">#AECED9</color>
+    <color name="answerbuttonBdisabled">#EAD3B0</color>
+    
+    <color name="answerbuttonC">#8EC060</color>
+    <color name="answerbuttonCpressed">#EA9D24</color>
+    <color name="answerbuttonCfocuessed">#A7C090</color>
+    <color name="answerbuttonCdisabled">#EAD3B0</color>
+    
+    <color name="answerbuttonD">#D94328</color>
+    <color name="answerbuttonDpressed">#EA9D24</color>
+    <color name="answerbuttonDfocussed">#D98E80</color>
+     <color name="answerbuttonDdisabled">#EAD3B0</color>
+
+</resources><!--
+Hwb hexicdecimal colours
+
+1.BackGround = #2c2318
+2.Yellow Btns = #ea9d24
+3.Answer BtnA = #e0e0e0Í
+4.Answer BtnB = #83c3d9
+5.Answer BtnC = #8ec060
+6.Answer BtnD = #d94328
+-->

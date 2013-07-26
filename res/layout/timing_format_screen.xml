@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <TextView
+        android:id="@+id/timing_format_header"
+        style="@style/header_texr_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fformat_amseri_timing_format"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/sep"
+        style="@style/seperator_view_style"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sep_height"
+        android:layout_below="@+id/timing_format_header" />
+    
+    <Button
+        android:id="@+id/time_hawdd_button"
+       android:layout_width="@dimen/normal_button_width"
+        android:layout_height="@dimen/normal_button_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/normal_button"
+        android:text="@string/hawdd" />
+
+    
+    <Button
+        android:id="@+id/time_soffa_button"
+        android:layout_width="@dimen/normal_button_width"
+        android:layout_height="@dimen/normal_button_height"
+        android:layout_above="@+id/time_hawdd_button"
+        android:layout_alignLeft="@+id/time_hawdd_button"
+        android:layout_marginBottom="@dimen/normal_button_height"
+        android:background="@drawable/normal_button"
+        android:text="@string/soffa" />
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:id="@+id/vocabicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/vocab_button"
+            android:contentDescription="@string/vocab_button" 
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    
+</RelativeLayout>

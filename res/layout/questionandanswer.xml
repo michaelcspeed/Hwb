@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    
+   <TextView
+        android:id="@+id/time_header"
+        style="@style/big_time_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start_time"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/sep"
+        style="@style/seperator_view_style"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/time_header" />
+    
+
+    <fragment
+        android:id="@+id/placeholderFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_below="@id/sep"
+        class="com.cemas.s4c.hwb.QuestionFragment" >
+    </fragment>
+
+    
+     <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:id="@+id/vocabicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/vocab_button"
+            android:contentDescription="@string/vocab_button" 
+            android:visibility="invisible"/>
+    </RelativeLayout>
+   
+</RelativeLayout>

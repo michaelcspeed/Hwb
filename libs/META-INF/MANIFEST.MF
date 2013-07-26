@@ -1,0 +1,651 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: patch/system/app/CalendarProvider.odex.p
+SHA1-Digest: E+72/EYpZ3EcPtJU4ikcppgYRIc=
+
+Name: patch/system/framework/android.test.runner.odex.p
+SHA1-Digest: wjBjiiC2/4GOjL8IuJgf5y0vAoI=
+
+Name: patch/system/app/ChromeBookmarksSyncAdapter.odex.p
+SHA1-Digest: 788nAAE81gl1PJcrIG3uzY7kVzk=
+
+Name: patch/system/lib/libstagefright_soft_aacdec.so.p
+SHA1-Digest: lbzabY0N3dc2Rq3py2Xrbudzi7M=
+
+Name: patch/system/app/CalendarProvider.apk.p
+SHA1-Digest: 0CHK4sbTPnfAADPrA9cEvAcpO1s=
+
+Name: patch/system/app/GoogleServicesFramework.odex.p
+SHA1-Digest: +yc5u+jvMyTXd3TdETF3GvK3qvk=
+
+Name: patch/system/framework/bouncycastle.odex.p
+SHA1-Digest: vWL8RI7Bd2janc6nJH5B6lIJLI8=
+
+Name: patch/system/app/Talk.apk.p
+SHA1-Digest: tiu5tz4eK3erqgIcHAAc3GmOFU4=
+
+Name: patch/system/framework/send_bug.odex.p
+SHA1-Digest: CZVHhJVENaD02qxfx2R7LRqE48A=
+
+Name: patch/system/framework/settings.odex.p
+SHA1-Digest: Ei9j1TgHF0rt5JHeJWUSd6YO1RQ=
+
+Name: patch/system/framework/bouncycastle.jar.p
+SHA1-Digest: 8LZZ3f2NvHYymw1UgYsZlCU7RIk=
+
+Name: patch/system/app/HoloSpiralWallpaper.apk.p
+SHA1-Digest: FagRygURUN2IewsxGCl9kl4K9dY=
+
+Name: patch/system/app/GoogleBackupTransport.odex.p
+SHA1-Digest: JjyzEBd+A9K1OX4MI9fFaQJk9FI=
+
+Name: patch/system/app/BackupRestoreConfirmation.apk.p
+SHA1-Digest: YKdlE+uUyavCW+1zU54BGSs2clU=
+
+Name: patch/system/app/Mms.odex.p
+SHA1-Digest: k2AmFn0YPYY1In3mJUQ4Oop2Kco=
+
+Name: patch/system/framework/core.odex.p
+SHA1-Digest: C+95C1vriunxVgZ78tTzu+zW5Gs=
+
+Name: patch/system/app/DeskClockGoogle.odex.p
+SHA1-Digest: u6Jmzgy9WJ9gOAlTOX9xxEaOKoY=
+
+Name: patch/system/app/GenieWidget.odex.p
+SHA1-Digest: ba9hAlxJ2SQeXHfZyjg9cfzH5Jc=
+
+Name: patch/system/framework/com.google.android.media.effects.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/InputDevices.odex.p
+SHA1-Digest: IgyB74EYHVLbKxkUrYn9xCVax44=
+
+Name: patch/system/app/PhotoTable.apk.p
+SHA1-Digest: tXAHIY7reAJJUe0zpqvRNdLLdCk=
+
+Name: patch/system/framework/com.android.location.provider.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/Contacts.apk.p
+SHA1-Digest: lRLgP6w8zWMLeH1+1HyFB2Hy1d8=
+
+Name: patch/system/lib/libbcinfo.so.p
+SHA1-Digest: xAW5TXJFEorY251GBizvQ3rgSyQ=
+
+Name: patch/system/app/PackageInstaller.apk.p
+SHA1-Digest: KjHQ1amC6PIbcJfyOfnSqBkbG2Y=
+
+Name: patch/system/app/ConfigUpdater.odex.p
+SHA1-Digest: ZyNiTzHAIAnvye4JcXbEQL+9nVM=
+
+Name: patch/system/app/VideoEditorGoogle.odex.p
+SHA1-Digest: 1GVV1Br6XcxVaC2sj6LPiLO6fu8=
+
+Name: patch/system/app/VisualizationWallpapers.odex.p
+SHA1-Digest: 4e1Se7dQYxvi2r7nCD/vsh31jLg=
+
+Name: patch/system/app/NetworkLocation.odex.p
+SHA1-Digest: h2FN5Cg+PwWUT/+BXosHpy7bEJc=
+
+Name: patch/system/framework/monkey.odex.p
+SHA1-Digest: DaFyn5/BGtPLd8H4deoNy1MMB+M=
+
+Name: patch/system/app/Talk.odex.p
+SHA1-Digest: 0+KTL3mb8YdAFrcKXor2329MwIs=
+
+Name: patch/system/app/LiveWallpapersPicker.apk.p
+SHA1-Digest: MZmqNIF/YSesT7kEwf+6mrmIbSw=
+
+Name: patch/system/framework/ime.jar.p
+SHA1-Digest: k0fvjEqZkrcAZyZMVjjBCipb4QM=
+
+Name: patch/system/app/FusedLocation.odex.p
+SHA1-Digest: XHB+Qqf1hPy69ZoV3iC08PZeZ1A=
+
+Name: patch/system/app/ContactsProvider.odex.p
+SHA1-Digest: 5hWybiRApakN8wMtSjWI52OIjy8=
+
+Name: patch/system/lib/libchromium_net.so.p
+SHA1-Digest: yvu26LaMRo4nt8eRJ7i7DnJYHoU=
+
+Name: patch/system/app/Velvet.odex.p
+SHA1-Digest: 9FobxWMv0efl1lFRXScCY+8U4Js=
+
+Name: patch/system/framework/framework.jar.p
+SHA1-Digest: edO6cky3DHLt+7pe1B7xPoz9jdg=
+
+Name: patch/system/app/Velvet.apk.p
+SHA1-Digest: SOOHQQo2F6MmxSYZFeVPPBeUTkc=
+
+Name: patch/system/app/DownloadProvider.apk.p
+SHA1-Digest: xT2LpJfifLBu9QJqm1+6mDZbN2g=
+
+Name: patch/system/framework/telephony-common.odex.p
+SHA1-Digest: fU9PxK16/ZGqYxryK4+O89/emvg=
+
+Name: patch/system/framework/pm.odex.p
+SHA1-Digest: DvbodDR40X0yMYQazqcq8Af4lKc=
+
+Name: patch/system/app/GoogleContactsSyncAdapter.apk.p
+SHA1-Digest: YT0CelgcghWo/At3ftEs1cRT40g=
+
+Name: patch/system/app/SystemUI.apk.p
+SHA1-Digest: zxFaeimVtpw7mzA0lTPHzCpcR80=
+
+Name: patch/system/framework/requestsync.odex.p
+SHA1-Digest: JvNKlVeVGK1DhndGXkTm2JAANeU=
+
+Name: patch/system/app/GalleryGoogle.odex.p
+SHA1-Digest: GAmjaxLRA2oa/us1L06HdoQBpzw=
+
+Name: recovery/etc/install-recovery.sh
+SHA1-Digest: vzdvPthJPf93YGYwBiK+3elF0tM=
+
+Name: patch/system/app/Videos.apk.p
+SHA1-Digest: Ei5y38C8eRvUDTnU1/ouypteRkk=
+
+Name: patch/system/app/SharedStorageBackup.odex.p
+SHA1-Digest: XWtZJMa0NQ7cRJwOnw4oezoOJwg=
+
+Name: patch/system/app/Gmail2.odex.p
+SHA1-Digest: 5n8YlJeZaoHs8Dh4SqAtgInNJII=
+
+Name: patch/system/framework/com.android.future.usb.accessory.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/framework/bu.odex.p
+SHA1-Digest: MbeRpBFdJOoKI1pRQ3wk3ce3fcw=
+
+Name: patch/system/app/LatinImeGoogle.odex.p
+SHA1-Digest: uHNQE6bB2vg2BlnrsWhBIrvetSw=
+
+Name: patch/system/framework/android.policy.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/SettingsProvider.odex.p
+SHA1-Digest: jm3cmLp8BALje287dyqTb0qAOhQ=
+
+Name: patch/system/app/UserDictionaryProvider.apk.p
+SHA1-Digest: dE3qB/Db6KWeM89/E8TLNdmxopk=
+
+Name: patch/system/app/VoiceSearchStub.odex.p
+SHA1-Digest: E7b78wtRo1x0BOBA92GhQtaswco=
+
+Name: patch/system/framework/am.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/SetupWizard.odex.p
+SHA1-Digest: 2BXPaMzUvKngw8BdObfyqWIUC9s=
+
+Name: patch/system/framework/com.google.android.media.effects.odex.p
+SHA1-Digest: m8Jwz0R4y2I9oTvEwFtJN9Av3RU=
+
+Name: patch/system/app/DownloadProviderUi.odex.p
+SHA1-Digest: eDP0l9E51xKTmO7pRfwMrqh+tcI=
+
+Name: patch/system/app/Settings.odex.p
+SHA1-Digest: aNDwO6hWWMHYQfaLl+iR/KHukWU=
+
+Name: patch/system/app/SystemUI.odex.p
+SHA1-Digest: t6ArsVEihVtgvs3ndq9AqjLrwVw=
+
+Name: patch/system/app/GoogleLoginService.apk.p
+SHA1-Digest: yXquIHsNeg0XAwKbMA9t2DO4BTg=
+
+Name: patch/system/framework/uiautomator.jar.p
+SHA1-Digest: /A4qIYX2jgdroDgmWuVEO3HJAeA=
+
+Name: patch/system/app/ConfigUpdater.apk.p
+SHA1-Digest: 3YBSjA+YGdCAs75AWKR4mEeWbgM=
+
+Name: patch/system/framework/telephony-common.jar.p
+SHA1-Digest: ZzajhdfO8kTmylI0NkQr9c83g7U=
+
+Name: patch/system/app/Mms.apk.p
+SHA1-Digest: jSZ/+1DpriISx+7gai4hOeRPyoc=
+
+Name: patch/system/app/GoogleTTS.odex.p
+SHA1-Digest: Z7N4Pq3g3Q/7oN0ghE22P9mLxHs=
+
+Name: patch/system/app/CertInstaller.apk.p
+SHA1-Digest: do79JKWVF+PYLw6Bh8LPyGT8m6w=
+
+Name: patch/system/framework/input.odex.p
+SHA1-Digest: MF3MBFeuvOf7QuOY/1ybbUzkr5c=
+
+Name: patch/system/framework/monkey.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/framework/pm.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/BrowserGoogle.odex.p
+SHA1-Digest: /dV+ALM4NoHP36ytbKzg7oYcYeg=
+
+Name: patch/system/app/DownloadProvider.odex.p
+SHA1-Digest: /WbLZpnArz1bOSF3NKE3bqL/ff4=
+
+Name: recovery/recovery-from-boot.p
+SHA1-Digest: +zq2QxszJoI+7l+OBgXv76dC1x8=
+
+Name: patch/system/app/PhotoTable.odex.p
+SHA1-Digest: buh7E/GgTS0R/RtQ/nUmJ9Qv9nU=
+
+Name: patch/system/framework/ime.odex.p
+SHA1-Digest: GbSJmofyFfoB+LSmer5iWRB2AIk=
+
+Name: patch/system/app/ApplicationsProvider.odex.p
+SHA1-Digest: QPn7R33SevhP9+mVuyxRFGZa40k=
+
+Name: patch/system/framework/com.google.android.maps.odex.p
+SHA1-Digest: nEwv9K4UfEUJ2f6M9b+kalMLQoE=
+
+Name: patch/system/build.prop.p
+SHA1-Digest: 5xrtsc6tLsfhQ4yvrBgDGxjBGm8=
+
+Name: patch/system/app/Nfc.apk.p
+SHA1-Digest: omQowPB/5EJNJN8E0DaR2/vGlp8=
+
+Name: patch/system/app/Nfc.odex.p
+SHA1-Digest: Fan3ILraed9mbiGVrIIbdj8CuTE=
+
+Name: patch/system/app/GmsCore.odex.p
+SHA1-Digest: yWaSXqraiFPGP/43ptAhvlUgzUw=
+
+Name: patch/system/framework/com.android.nfc_extras.odex.p
+SHA1-Digest: MGf9e0AP6Vbf/Re2zXNaNE84z0U=
+
+Name: patch/system/app/SettingsProvider.apk.p
+SHA1-Digest: ToJhSJAivr8N7lLPMvMeKrNRaqU=
+
+Name: patch/system/framework/apache-xml.odex.p
+SHA1-Digest: ByGAKmsedeX0elgw3ra5FctIzZ8=
+
+Name: patch/system/app/KeyChain.odex.p
+SHA1-Digest: NxwTRWV+VAdkhN5Vze0LkSmFkMw=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: sJkWEqUE9RyHn259gSDTyW/Fq1Q=
+
+Name: patch/system/app/GooglePartnerSetup.apk.p
+SHA1-Digest: pOHSbj+1P9lLbdRcdmIjpi+HT74=
+
+Name: patch/system/framework/requestsync.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/PackageInstaller.odex.p
+SHA1-Digest: FUb0STDPt7215Vg1bbd6QuvGhes=
+
+Name: patch/system/lib/libstagefright_soft_aacenc.so.p
+SHA1-Digest: 8Azv0xV1Z9G2U20eiIPvBYCax3w=
+
+Name: patch/system/bin/mdnsd.p
+SHA1-Digest: LTvOerfj//7ZgvY41uiJaIgR8EI=
+
+Name: patch/system/app/FusedLocation.apk.p
+SHA1-Digest: nfU+yzvGK4kgKrDVu3YWCy69s00=
+
+Name: patch/system/app/LatinImeDictionaryPack.odex.p
+SHA1-Digest: /Oa5IjLnIb1+qYTFztqH1owwAz0=
+
+Name: patch/system/app/GoogleLoginService.odex.p
+SHA1-Digest: 8mwYR5Zbob/gRxNgpBRQ/BctHKo=
+
+Name: patch/system/app/DownloadProviderUi.apk.p
+SHA1-Digest: a+cQcqzNJCxY/fAiPDmc8eb6tjc=
+
+Name: patch/system/framework/am.odex.p
+SHA1-Digest: GP4gQzlU3SGqzOVmm0v9Nwff6c4=
+
+Name: patch/system/app/DrmProvider.apk.p
+SHA1-Digest: AsJfOX4necsFlZL4L90SuoFFwrY=
+
+Name: patch/system/app/MediaProvider.apk.p
+SHA1-Digest: 8ZRsmTnBLNM/V1y9Ka7oX78T9p4=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: R1NYvivBc5z8S51Xq5890pT0jUM=
+
+Name: patch/system/framework/bmgr.odex.p
+SHA1-Digest: n/JQlNX/m/5JAaC6m8oRDfQNWMo=
+
+Name: patch/system/framework/uiautomator.odex.p
+SHA1-Digest: jJU7apJjBZBMmc5A8lRF8MPapZ4=
+
+Name: patch/system/framework/com.google.widevine.software.drm.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/framework/core-junit.odex.p
+SHA1-Digest: PYD2hOyvlKvfokDdt3uxLLknTgo=
+
+Name: patch/system/app/HTMLViewer.odex.p
+SHA1-Digest: Afxi79ypsx8NeGa+099R/CJ6KPk=
+
+Name: patch/system/app/NoiseField.odex.p
+SHA1-Digest: HSOonl8qR42J/+aryqyQofsIXRo=
+
+Name: patch/system/framework/android.test.runner.jar.p
+SHA1-Digest: JzxQe3kGYLg7oPmGdUxfWU5HCVk=
+
+Name: patch/system/framework/settings.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/framework/send_bug.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/Music2.odex.p
+SHA1-Digest: s92MqS8tYlN+qO3W1LLr8eoPTEE=
+
+Name: patch/system/app/BasicDreams.odex.p
+SHA1-Digest: cK9eJj4kIPFYgosABcsoIQEwkwg=
+
+Name: patch/system/app/GoogleFeedback.apk.p
+SHA1-Digest: nHwF15V2FZegGUSFXiy2JcXX+Ks=
+
+Name: patch/system/app/Phone.apk.p
+SHA1-Digest: HC6I9OxWfKmgQNBcAy+qNzdITVQ=
+
+Name: patch/system/app/MediaProvider.odex.p
+SHA1-Digest: XmqiPNahkADsNdZXghsV89KOCZ8=
+
+Name: patch/system/framework/mms-common.odex.p
+SHA1-Digest: lAwwb83zsh4x9Iow8Za5HcRF7i8=
+
+Name: patch/system/app/InputDevices.apk.p
+SHA1-Digest: CnU0lCdgSi0aOcjnd5VlDPG64t4=
+
+Name: patch/system/app/BrowserGoogle.apk.p
+SHA1-Digest: QnhP4YLaH1k2yxOVpNmtT7xxWkg=
+
+Name: patch/system/app/MediaUploader.odex.p
+SHA1-Digest: u3nOCzAaI3OC9y57P1Z4N7AUxMA=
+
+Name: patch/system/app/BasicDreams.apk.p
+SHA1-Digest: xF3m/X7l1Fzd7ADs/OkkK6EJCvk=
+
+Name: patch/system/app/DefaultContainerService.apk.p
+SHA1-Digest: 3D4kT+zH15ifXfnPImJq8mzUHos=
+
+Name: patch/system/app/GoogleContactsSyncAdapter.odex.p
+SHA1-Digest: CaLjVAP9UQ9JylLohCbvVIZ4tT0=
+
+Name: patch/system/app/OneTimeInitializer.apk.p
+SHA1-Digest: 1AfHevO+v/iwwsNo9asoHy5Kya8=
+
+Name: patch/system/app/DefaultContainerService.odex.p
+SHA1-Digest: FNgCdZgfiYmnbIFzSGI07zzVgQY=
+
+Name: patch/system/framework/svc.odex.p
+SHA1-Digest: MHRQ4oj9+7LvKjnzILNW8tmMWCs=
+
+Name: patch/system/app/GoogleTTS.apk.p
+SHA1-Digest: NtBOEa0ZsyR6pahb7iIkGohjb6I=
+
+Name: patch/system/etc/NOTICE.html.gz.p
+SHA1-Digest: lKEjN0ubvBnY8NA1IFNWAn1jucI=
+
+Name: patch/system/app/ContactsProvider.apk.p
+SHA1-Digest: +savyGR7Yf7Q/dLoC3t/Kf+xklo=
+
+Name: patch/system/app/KeyChain.apk.p
+SHA1-Digest: V5dsNNM0ZlokEPzuLQLcmsRoayM=
+
+Name: patch/system/app/EmailGoogle.odex.p
+SHA1-Digest: mqcVWAo87uRTjUjU4ygS/pfKu+k=
+
+Name: patch/system/app/TelephonyProvider.apk.p
+SHA1-Digest: Ah5PlT/u1itrRWWZAr53rLKWaI4=
+
+Name: patch/system/framework/framework-res.apk.p
+SHA1-Digest: OebkSjBKr3xRwNFrmKO4jLbX+yc=
+
+Name: patch/system/framework/com.android.location.provider.odex.p
+SHA1-Digest: Ys9q2XyE6H3qBCFTVG/jcMyTsXE=
+
+Name: patch/system/framework/com.google.widevine.software.drm.odex.p
+SHA1-Digest: 9v8uDYdGsaa8vqifTAPwwn28No8=
+
+Name: patch/system/framework/android.policy.odex.p
+SHA1-Digest: JzVzfZljQZL3iyv/rCqFxWFIVtM=
+
+Name: patch/system/app/TelephonyProvider.odex.p
+SHA1-Digest: 76PGQEaJ8Vo+jaoRrl1ls+KdO04=
+
+Name: patch/system/app/PhaseBeam.odex.p
+SHA1-Digest: qvlsbpM2YJ7GP+0Cb5kjYcjVXII=
+
+Name: patch/system/framework/framework.odex.p
+SHA1-Digest: vICCet4uqpKhPxvL7HoOlkljoIg=
+
+Name: patch/system/app/UserDictionaryProvider.odex.p
+SHA1-Digest: 7JhqN1vfFD3D/c7rqfpdzUXzS8E=
+
+Name: patch/system/app/HoloSpiralWallpaper.odex.p
+SHA1-Digest: UIncqOAZQggmO8b6XP3a7n31Hqg=
+
+Name: patch/system/bin/wpa_supplicant.p
+SHA1-Digest: tVLHhlPPPNJeMUayUAiT5Ryd3Xc=
+
+Name: patch/system/framework/bmgr.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/Music2.apk.p
+SHA1-Digest: OBvljxGZKBzDGaqekB9/V9vBNm8=
+
+Name: patch/system/framework/com.google.android.maps.jar.p
+SHA1-Digest: ZzajhdfO8kTmylI0NkQr9c83g7U=
+
+Name: patch/system/app/BackupRestoreConfirmation.odex.p
+SHA1-Digest: vRtHTzA8vJCJlutxL+qN3iZQRD4=
+
+Name: patch/system/app/Launcher2.odex.p
+SHA1-Digest: U4bYQJm4JVhm8C61a4JAaIKlYSg=
+
+Name: patch/system/app/GoogleFeedback.odex.p
+SHA1-Digest: WFIIi2SqqQ+QKhls9hXmlJM/Yqg=
+
+Name: patch/system/app/VpnDialogs.odex.p
+SHA1-Digest: jOd4iRly7/Jl4cozqc5TnjObC+Q=
+
+Name: patch/system/app/Settings.apk.p
+SHA1-Digest: AKBkvA7gGbRWRVh1x9FP94V6Krg=
+
+Name: patch/system/app/SharedStorageBackup.apk.p
+SHA1-Digest: UvSwN9aj6AOWCf+ePICQuDCkdHg=
+
+Name: META-INF/com/android/otacert
+SHA1-Digest: lyue/teJKRznJxz4rDzlcxCATgE=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: EcA1B8eLapWqLzR2afZ2JEuwP4Y=
+
+Name: patch/system/app/Phone.odex.p
+SHA1-Digest: /+HWnUzHPKOp/eaSPVxM+lr6yKA=
+
+Name: patch/system/framework/core.jar.p
+SHA1-Digest: 3NZtmDWVzJqWizFya7vfSsY2ouU=
+
+Name: patch/system/framework/svc.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/SoundRecorder.odex.p
+SHA1-Digest: OuiY2DistbVn5nT5PZBL6j961XI=
+
+Name: patch/system/lib/libbcc.sha1.so.p
+SHA1-Digest: Zoc0uY9K521m0W3yQBSNPLLwwcg=
+
+Name: patch/system/app/GoogleEars.odex.p
+SHA1-Digest: b4DxxnxHayH2uO8yA5bY/YoUSq4=
+
+Name: patch/system/framework/core-junit.jar.p
+SHA1-Digest: fN9h/vA3L3Jc11O1joae/8YMumM=
+
+Name: patch/system/framework/content.odex.p
+SHA1-Digest: Due8PsxeCBSgge6g1e7K3WB2AEA=
+
+Name: patch/system/app/VisualizationWallpapers.apk.p
+SHA1-Digest: yloH2lS3ZxgPUmbFmbK5vVessn0=
+
+Name: patch/system/app/CalendarGoogle.odex.p
+SHA1-Digest: pe6Xu3M9z3g7FBw4urz7M/kqaEk=
+
+Name: patch/system/app/GoogleServicesFramework.apk.p
+SHA1-Digest: mm2if1mfp9Mi/11uPMq/JQBLKr4=
+
+Name: patch/system/app/Stk.apk.p
+SHA1-Digest: ceGxjguVcPRe3pOjhjvxjNAlNsw=
+
+Name: patch/system/app/TagGoogle.odex.p
+SHA1-Digest: OH8zgIk70rO96tGGWaO0LyAflqU=
+
+Name: patch/system/framework/ext.jar.p
+SHA1-Digest: /kjL6eqLb7VaRURYs8OKqYXL9LA=
+
+Name: patch/system/lib/libwebcore.so.p
+SHA1-Digest: pPt1w+49YVePNO89fNJvXD/ni7I=
+
+Name: patch/system/app/LatinImeGoogle.apk.p
+SHA1-Digest: 0CSr9CyfMh/x9WD0H2QrKvS8idc=
+
+Name: patch/system/lib/libpatts_engine_jni_api.so.p
+SHA1-Digest: SdILV2PFfZqTSiIDNXJDANeoC6o=
+
+Name: patch/system/app/Bluetooth.odex.p
+SHA1-Digest: RE8h5xXZfkmqmWWKH/4QY+1W8iE=
+
+Name: patch/system/lib/libmllite.so.p
+SHA1-Digest: unTwmPXIeYI1+MWs6hhLws/QGFk=
+
+Name: patch/system/app/LiveWallpapers.odex.p
+SHA1-Digest: oksnvWl/JeyzPtDRrRmbDhzqeRs=
+
+Name: patch/system/app/SoundRecorder.apk.p
+SHA1-Digest: Qfd3IvGv6m2r2rKx4li3SQYgYGc=
+
+Name: patch/system/app/Bluetooth.apk.p
+SHA1-Digest: bMoue3yCZlSZBbtHtJUo+ikwSlw=
+
+Name: patch/system/framework/apache-xml.jar.p
+SHA1-Digest: FCsJriRptYGx+KxivsZSh6pcJaQ=
+
+Name: patch/system/app/Calculator.apk.p
+SHA1-Digest: X/KOt2AZbHghJkWSR2QSV40wd7U=
+
+Name: patch/system/app/MusicFX.odex.p
+SHA1-Digest: Cw7DhG64s252KZSkSFe36UMHY1U=
+
+Name: patch/system/app/FaceLock.apk.p
+SHA1-Digest: k9ZcoudzWeUYGRQqBQULdvAfp0E=
+
+Name: patch/system/app/ChromeBookmarksSyncAdapter.apk.p
+SHA1-Digest: hS0WtF16tSk2i1AKZzjtoPmw13M=
+
+Name: patch/system/app/DrmProvider.odex.p
+SHA1-Digest: myE/uO2hDyGt5xl5H3cFnQQhScE=
+
+Name: patch/system/app/Exchange2Google.odex.p
+SHA1-Digest: OrMAAAf0tvrSGEKJ7K1HEtLS1bU=
+
+Name: patch/system/lib/hw/bluetooth.default.so.p
+SHA1-Digest: Xqkl5sr9IC1GD6HCzSdgWusCnfI=
+
+Name: patch/system/etc/recovery-resource.dat.p
+SHA1-Digest: WnKBEJZFcJu3FwheRb/gf+4xjeU=
+
+Name: patch/system/framework/com.android.nfc_extras.jar.p
+SHA1-Digest: VJtUyFHdcwO9OnAfwwbfIBI0u1c=
+
+Name: patch/system/app/FaceLock.odex.p
+SHA1-Digest: ue4JW1Zb2B+6uquH20lEfjNQEcg=
+
+Name: patch/system/app/Launcher2.apk.p
+SHA1-Digest: rfYk/rwc5WQncTkOrySLVMvz/uU=
+
+Name: patch/system/framework/content.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/framework/services.odex.p
+SHA1-Digest: Wch9mD6Qte07zKmhNe7Ocra0OKg=
+
+Name: patch/system/app/Calculator.odex.p
+SHA1-Digest: xA8gZ/o6xBFdzsc1M59hkAW3FHI=
+
+Name: patch/system/framework/javax.obex.jar.p
+SHA1-Digest: iP1B92Mhe5erXc8kl1er3ykBv7Y=
+
+Name: patch/system/lib/libmdnssd.so.p
+SHA1-Digest: fqWxj58GX+OKKK5PI87meLflKrA=
+
+Name: patch/system/framework/com.android.future.usb.accessory.odex.p
+SHA1-Digest: bQCtR44VkNHKTN14aVthSYtQqLE=
+
+Name: patch/system/app/YouTube.odex.p
+SHA1-Digest: x6b63UpsTgKyDr7fHSAWRuEnQKM=
+
+Name: patch/system/app/OneTimeInitializer.odex.p
+SHA1-Digest: xvvW6WCPK//mY/CdnG1wdoZSrMg=
+
+Name: patch/system/app/LiveWallpapersPicker.odex.p
+SHA1-Digest: WVvaRChPFdk1Cr45rKF8xyfZYbo=
+
+Name: patch/system/bin/debuggerd.p
+SHA1-Digest: hA5w7JOJ0dqi5e2Wye+84o9JqZs=
+
+Name: patch/system/framework/services.jar.p
+SHA1-Digest: k0fvjEqZkrcAZyZMVjjBCipb4QM=
+
+Name: patch/system/app/VpnDialogs.apk.p
+SHA1-Digest: eYXFuU9XZ54JBSRA1skVeZXc3qg=
+
+Name: patch/system/app/LatinImeDictionaryPack.apk.p
+SHA1-Digest: IN6w0wUp61IrfnTssTxQWoCkhIo=
+
+Name: patch/system/framework/mms-common.jar.p
+SHA1-Digest: ZzajhdfO8kTmylI0NkQr9c83g7U=
+
+Name: patch/system/lib/libwebrtc_audio_preprocessing.so.p
+SHA1-Digest: MDEt/mGDKDvhgCNVxT7hRDNMMJQ=
+
+Name: patch/system/app/Contacts.odex.p
+SHA1-Digest: NagyberzExDP6/0pDrsXQ+BlOuE=
+
+Name: patch/system/framework/javax.obex.odex.p
+SHA1-Digest: ya4wdMn5CP8i71GAu3KBs++Ma8I=
+
+Name: patch/system/framework/input.jar.p
+SHA1-Digest: k0fvjEqZkrcAZyZMVjjBCipb4QM=
+
+Name: patch/system/app/LiveWallpapers.apk.p
+SHA1-Digest: 4g+HOHY2nTorCAkZhPxfVVRKunY=
+
+Name: patch/system/app/GooglePartnerSetup.odex.p
+SHA1-Digest: SIvM1hqr52IiDf3XGfUNlOBv2Ig=
+
+Name: patch/system/app/GoogleBackupTransport.apk.p
+SHA1-Digest: Vqv7tUxCArm/Q1DgI2ph4kimpIg=
+
+Name: patch/system/framework/ext.odex.p
+SHA1-Digest: GTmLmHGX0x+gqb53ZzY701K2L94=
+
+Name: patch/system/lib/libbcc.so.p
+SHA1-Digest: Z2kELLJHYDicZ574wMe/G43eYBU=
+
+Name: patch/system/app/HTMLViewer.apk.p
+SHA1-Digest: p+EPKheYk8LABLBgmG7CiqMaEuo=
+
+Name: patch/system/bin/hostapd.p
+SHA1-Digest: AGKLK5OUsDvhckTj2c95BXzqkEc=
+
+Name: patch/system/framework/bu.jar.p
+SHA1-Digest: sc1Nbg20b09KGKEqWm+sROKFx18=
+
+Name: patch/system/app/CertInstaller.odex.p
+SHA1-Digest: yoiXUdr3bp+gNt6sQJMqAsG0mdw=
+
+Name: patch/system/app/ApplicationsProvider.apk.p
+SHA1-Digest: z/4DXiIoLmxJqfcAXgdSaOc/t9g=
+
+Name: patch/system/app/Stk.odex.p
+SHA1-Digest: JTa/VCJ17EkzyyK2ffmsmOAFnpo=
+

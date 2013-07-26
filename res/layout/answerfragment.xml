@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/answer_fragment"
+    android:layout_height="wrap_content"
+    android:background="@color/background" >
+
+    <Button
+        android:id="@+id/answerA_button"
+        android:layout_width="@dimen/normal_button_width"
+        android:layout_height="@dimen/normal_button_height"
+        android:layout_alignLeft="@+id/answerA_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/normal_button_height"
+        android:layout_marginTop="@dimen/normal_button_height"
+        android:background="@drawable/answer_a_button"
+        android:text="Answer A" />
+
+    <Button
+        android:id="@+id/answerB_button"
+        android:layout_width="@dimen/normal_button_width"
+        android:layout_height="@dimen/normal_button_height"
+        android:layout_alignLeft="@+id/answerA_button"
+        android:layout_below="@+id/answerA_button"
+        android:layout_marginBottom="@dimen/normal_button_height"
+        android:background="@drawable/answer_b_button"
+        android:text="Answer B" />
+
+    <Button
+        android:id="@+id/answerC_button"
+        android:layout_width="@dimen/normal_button_width"
+        android:layout_height="@dimen/normal_button_height"
+        android:layout_alignLeft="@+id/answerA_button"
+        android:layout_below="@+id/answerB_button"
+        android:layout_marginBottom="@dimen/normal_button_height"
+        android:background="@drawable/answer_c_button"
+        android:text="Answer C" />
+
+    <Button
+        android:id="@+id/answerD_button"
+        android:layout_width="@dimen/normal_button_width"
+        android:layout_height="@dimen/normal_button_height"
+        android:layout_alignLeft="@+id/answerC_button"
+        android:layout_below="@+id/answerC_button"
+        android:layout_marginBottom="@dimen/normal_button_height"
+        android:background="@drawable/answer_d_button"
+        android:text="Answer D" />
+
+</RelativeLayout>

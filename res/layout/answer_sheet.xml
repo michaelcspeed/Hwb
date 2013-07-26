@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/background" >
+
+        <TextView
+            android:id="@+id/well_done"
+            style="@style/header_texr_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/da_iawn_well_done_"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/sep"
+            style="@style/seperator_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sep_height"
+            android:layout_below="@+id/well_done" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:id="@+id/vocabicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/vocab_button"
+            android:contentDescription="@string/vocab_button"
+            android:visibility="invisible" />
+        
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/home_button"
+            android:contentDescription="@string/home_button" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/score_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical" >
+
+                <TextView
+                    android:id="@+id/you_answered"
+                    style="@style/header_texr_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/fe_atebock_you_answered_"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/correct_out_of_20"
+                    style="@style/big_time_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/you_answered"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="14 / 20"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/qs_correctly"
+                    style="@style/header_texr_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/correct_out_of_20"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:text="@string/cwestiwn_yn_gywir_questions_correctly"
+                    android:textAlignment="center" />
+
+                <View
+                    android:id="@+id/sep2"
+                    style="@style/seperator_view_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sep_height"
+                    android:layout_below="@+id/qs_correctly" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shareBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:id="@+id/facebook_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/big_facebook_button"
+            android:contentDescription="@string/vocab_button" />
+
+        <ImageButton
+            android:id="@+id/twitter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/facebook_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/big_twitter_button"
+            android:contentDescription="@string/vocab_button" />
+    </RelativeLayout>
+
+</RelativeLayout>
